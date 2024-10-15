@@ -74,6 +74,10 @@ button.active {
 }
 
 
+area {
+    outline: 2px solid red; /* Utiliser seulement pour le développement, retirer en production */
+    z-index: -1;
+}
 
 
 
