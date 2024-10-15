@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  <!--import de JQuery pour le responsive des map area -->
-    <script src="jquery.rwdImageMaps.min.js"></script> <!--Lien vers fichier JS pour le responsive des map area -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="jquery.rwdImageMaps.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -18,11 +17,10 @@
             <img src="Images/logo Sweet Life.png" id="logoProjet" alt="">
             <h5 style="text-align: center; color: black;">Résidence Sweet Life <br> à Yssingeaux (43)</h5>
             <a href="#" class="active">Maquette</a>
-            <a target= »_blank href="https://www.google.fr/maps/place/16+Rue+de+la+Gare+Ter,+43200+Yssingeaux/@45.1432879,4.1182834,280m/data=!3m1!1e3!4m15!1m8!3m7!1s0x47f5935d00acd8e1:0x72500c6d8f2917a6!2sRue+de+la+Gare,+43200+Yssingeaux!3b1!8m2!3d45.1431433!4d4.1188694!16s%2Fg%2F1vcl339k!3m5!1s0x47f5935d0740deed:0xa5dc68b3e27ad66c!8m2!3d45.1431929!4d4.1188442!16s%2Fg%2F11ss7yzx8f?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D">Voir le quartier</a>
-            <a target= »_blank href="#">Plan de masse</a>
-            <a target= »_blank href="#">Plans des batiments</a>
-            <a target= »_blank href="https://groupelifeimmobilier.fr/"><img src="Images/GL logo.png" style="width: 100px; background-color: black; margin-top: 30px;" alt=""></a>
-            
+            <a href="https://www.google.fr/maps/place/16+Rue+de+la+Gare+Ter,+43200+Yssingeaux/">Voir le quartier</a>
+            <a href="#">Plan de masse</a>
+            <a href="#">Plans des batiments</a>
+            <a href="https://groupelifeimmobilier.fr/"><img src="Images/GL logo.png" style="width: 100px; background-color: black; margin-top: 30px;" alt=""></a>
         </div>
         <div id="maquette">
             <img src="" usemap="#image-map">
@@ -30,24 +28,19 @@
                 <area target="_top" alt="Appart 1" title="Appart 1" href="www.google.com" coords="840,583,70" shape="circle">
                 <area target="_top" alt="Appart 2" title="Appart 2" href="www.msn.com" coords="1127,415,78" shape="circle">
             </map>
-        </div>
-
-        
+        </div>      
     </div>
+
     <div id="cursor">
-        <!-- Curseur -->
         <input type="range" id="slider" min="1" max="19" value="1">
+        <button id="rdc">RDC</button>
+        <button id="r1">R+1</button>
+        <button id="r2">R+2</button>
+        <button id="r3">R+3</button>
+        <button id="toiture">Toiture</button>
     </div>
-   
 
-<!--script pour le responsive des map area -->
-    <script>
-        $('img[usemap]').rwdImageMaps();
-        $(document).ready(function(e) {
-    $('img[usemap]').rwdImageMaps();
-});
-    </script>
-
-
+    <!-- Place the script at the end of the body -->
+    <script src="main.js"></script>
 </body>
 </html>

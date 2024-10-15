@@ -6,6 +6,11 @@ body {
     color: white;
 }
 
+button {
+    font-family: "Montserrat", sans-serif;
+    width: 100px;
+}
+
 #container {
     display: flex;
     justify-content: center;
@@ -33,7 +38,7 @@ body {
     color: white;
 }
 
-a:hover {
+a:hover, button:hover {
     scale: 103%;
     font-weight: 500;
 }
@@ -52,6 +57,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    gap: 25px;
 }
 
 
@@ -59,6 +65,19 @@ img {
     border-radius: 10px;
     border: 1px solid #bc9c06;
 }
+
+/* Style pour les boutons actifs */
+button.active {
+    border: 2px solid #bc9c06;
+    color: #bc9c06;
+    font-weight: bold;
+}
+
+
+
+
+
+
 
 
 
@@ -94,7 +113,14 @@ img {
 
     #cursor {
         margin-bottom: 500px;
+        gap: 5px;
     }
+
+    button {
+        width: 60px;
+    }
+
+
     
 }
 
