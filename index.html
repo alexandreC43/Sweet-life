@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,6 @@
             <img src="" usemap="#image-map" id="mainImage">
             <map name="image-map" id="imageMap"></map>
         </div>
-
     </div>
 
     <div id="cursor">
@@ -39,16 +38,18 @@
         <button id="toiture">Toiture</button>
     </div>
 
-    <!-- Modale générique -->
-<div id="appartModal" class="modal">
-    <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <h2 id="modalTitle"></h2>
-        <p id="modalDescription"></p>
+    <!-- Fenêtre modale -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p id="modalText">Détails de l'appartement</p>
+        </div>
     </div>
-</div>
 
     <!-- Place le script de responsive area à la fin -->
     <script src="main.js"></script>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="modal.css">
 </body>
 </html>

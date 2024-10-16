@@ -7,9 +7,8 @@ let currentIndex = 0;
 // Sélectionne l'élément du curseur (slider) dans le document HTML
 const slider = document.getElementById('slider');
 
- // Objet contenant les images et leurs coordonnées pour le mode R+3
- const imageSets = {
-
+// Objet contenant les images et leurs coordonnées pour le mode R+3
+const imageSets = {
     'toiture': [
         'Images/Toiture_1.jpg', 'Images/Toiture_2.jpg', 'Images/Toiture_3.jpg',
         'Images/Toiture_4.jpg', 'Images/Toiture_5.jpg', 'Images/Toiture_6.jpg',
@@ -19,13 +18,11 @@ const slider = document.getElementById('slider');
         'Images/Toiture_16.jpg', 'Images/Toiture_17.jpg', 'Images/Toiture_18.jpg',
         'Images/Toiture_19.jpg'
     ],
-
-
     'R+3': [
         {
             src: 'Images/R3_1.jpg',
             areas: [
-                { shape: 'circle', coords: '311,414,51', alt: 'A34', title: 'A34' },
+                { shape: 'circle', coords: '311,414,51', alt: 'A34', title: 'A34', superficie: '120m²', prix: '250 000 €' },
                 { shape: 'circle', coords: '364,529,55', alt: 'A33', title: 'A33' },
                 { shape: 'circle', coords: '749,524,57', alt: 'A32', title: 'A32' },
                 { shape: 'circle', coords: '725,410,51', alt: 'A31', title: 'A31' },
@@ -272,8 +269,6 @@ const slider = document.getElementById('slider');
     ]
 };
 
-        // Continue avec les images jusqu'à R3_19...
-    
 
 // Objet contenant les références des boutons correspondant à chaque mode
 const modeButtons = {
@@ -312,6 +307,11 @@ function updateImage(index) {
                 areaElement.href = area.href;
                 areaElement.alt = area.alt;
                 areaElement.title = area.title;
+                areaElement.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    const apartmentInfo = `Appartement n°${area.alt} - Superficie 100m² - Prix 200 000 €`;
+                    openModal(apartmentInfo);
+                });
                 imageMap.appendChild(areaElement);
             });
         }
@@ -370,4 +370,27 @@ document.addEventListener("DOMContentLoaded", function() {
     modeButtons[currentMode].classList.add('active');
     updateImage(0); // Affiche la première image
     makeMapAreasResponsive(); // Rendre les zones cliquables responsives après le chargement initial
+});
+
+// Variables pour la fenêtre modale
+const modal = document.getElementById("modal");
+const modalText = document.getElementById("modalText");
+const closeButton = document.querySelector(".close-button");
+
+// Fonction pour ouvrir la fenêtre modale avec les informations de l'appartement
+function openModal(apartmentInfo) {
+    modalText.textContent = apartmentInfo;
+    modal.style.display = "block";
+}
+
+// Événement pour fermer la fenêtre modale en cliquant sur le bouton de fermeture
+closeButton.addEventListener("click", () => {
+    modal.style.display = "none";
+});
+
+// Événement pour fermer la fenêtre modale en cliquant en dehors du contenu de la modale
+window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
 });

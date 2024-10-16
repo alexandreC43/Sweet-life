@@ -9,13 +9,14 @@ body {
 button {
     font-family: "Montserrat", sans-serif;
     width: 100px;
+    border-radius: 10px;
 }
 
 #container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 50px;
     margin-right: 10px;
     width: 90%;
@@ -69,51 +70,59 @@ img {
 /* Style pour les boutons actifs */
 button.active {
     border: 2px solid #bc9c06;
-    color: #bc9c06;
+    background-color: #bc9c06;
+    color: #0a0a0a;
     font-weight: bold;
 }
 
 
 area {
     outline: 2px solid red; /* Utiliser seulement pour le développement, retirer en production */
-    z-index: -1;
 }
 
 
-
-/* Style pour la modale */
+/* MODAL CSS */
 .modal {
     display: none;
     position: fixed;
-    z-index: 1000;
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
+    border: 1px solid #888;
     width: 80%;
-    max-width: 600px;
+    max-width: 400px;
     border-radius: 10px;
 }
 
-.close-modal {
+.close-button {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close-modal:hover, .close-modal:focus {
-    color: #000;
+.close-button:hover,
+.close-button:focus {
+    color: black;
     text-decoration: none;
     cursor: pointer;
 }
+
+
+
+
+
+
 
 
 
