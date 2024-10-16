@@ -7,6 +7,19 @@ let currentIndex = 0;
 // Sélectionne l'élément du curseur (slider) dans le document HTML
 const slider = document.getElementById('slider');
 
+// Tableau contenant les informations des appartements
+const apartments = [
+    { title: 'A34', superficie: '120m²', prix: '250 000 €' },
+    { title: 'A33', superficie: '95m²', prix: '220 000 €' },
+    { title: 'A32', superficie: '110m²', prix: '240 000 €' },
+    { title: 'A31', superficie: '105m²', prix: '230 000 €' },
+    { title: 'B25', superficie: '130m²', prix: '270 000 €' },
+    { title: 'B24', superficie: '100m²', prix: '210 000 €' },
+    { title: 'B22', superficie: '115m²', prix: '235 000 €' },
+    { title: 'B21', superficie: '90m²', prix: '200 000 €' }
+];
+
+
 // Objet contenant les images et leurs coordonnées pour le mode R+3
 const imageSets = {
     'toiture': [
@@ -269,7 +282,6 @@ const imageSets = {
     ]
 };
 
-
 // Objet contenant les références des boutons correspondant à chaque mode
 const modeButtons = {
     'toiture': document.getElementById('toiture'),
@@ -309,10 +321,11 @@ function updateImage(index) {
                 areaElement.title = area.title;
                 areaElement.addEventListener("click", (event) => {
                     event.preventDefault();
-                    console.log(area);  // Vérifie si l'objet area contient bien les informations attendues
-                    const apartmentInfo = `Appartement n°${area.alt} - Superficie ${area.superficie} - Prix ${area.prix}`;
-                    console.log(apartmentInfo);  // Vérifie que le texte est bien formé
-                    openModal(apartmentInfo);
+                    const apartment = apartments.find(ap => ap.title === area.title);
+                    if (apartment) {
+                        const apartmentInfo = `Appartement n°${apartment.title} - Superficie ${apartment.superficie} - Prix ${apartment.prix}`;
+                        openModal(apartmentInfo);
+                    }
                 });
                 imageMap.appendChild(areaElement);
             });
@@ -385,12 +398,12 @@ function openModal(apartmentInfo) {
     modal.style.display = "block";
 }
 
-// Événement pour fermer la fenêtre modale en cliquant sur le bouton de fermeture
+// Ajouter un écouteur d'événement pour fermer la fenêtre modale
 closeButton.addEventListener("click", () => {
     modal.style.display = "none";
 });
 
-// Événement pour fermer la fenêtre modale en cliquant en dehors du contenu de la modale
+// Fermer la modale si on clique en dehors de celle-ci
 window.addEventListener("click", (event) => {
     if (event.target === modal) {
         modal.style.display = "none";
