@@ -83,6 +83,7 @@ area {
 
 /* MODAL CSS */
 .modal {
+   
     display: none;
     position: fixed;
     z-index: 1;
@@ -95,7 +96,11 @@ area {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fefefee5;
     color: #0a0a0a;
     margin: 15% auto;
     padding: 20px;
@@ -103,6 +108,12 @@ area {
     width: 80%;
     max-width: 400px;
     border-radius: 10px;
+}
+
+.modal-content button {
+    background-color:#bc9c06;
+    color:#0a0a0a;
+    width: 150px;
 }
 
 .close-button {

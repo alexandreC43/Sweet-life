@@ -9,16 +9,15 @@ const slider = document.getElementById('slider');
 
 // Tableau contenant les informations des appartements
 const apartments = [
-    { title: 'A34', superficie: '120m²', prix: '250 000 €' },
-    { title: 'A33', superficie: '95m²', prix: '220 000 €' },
-    { title: 'A32', superficie: '110m²', prix: '240 000 €' },
-    { title: 'A31', superficie: '105m²', prix: '230 000 €' },
-    { title: 'B25', superficie: '130m²', prix: '270 000 €' },
-    { title: 'B24', superficie: '100m²', prix: '210 000 €' },
-    { title: 'B22', superficie: '115m²', prix: '235 000 €' },
-    { title: 'B21', superficie: '90m²', prix: '200 000 €' }
+    { title: 'A34', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
+    { title: 'A33', superficie: '95m²', prix: '220 000 €', url_visite: 'https://visiteA33.com', typologie: 'T3' },
+    { title: 'A32', superficie: '110m²', prix: '240 000 €', url_visite: 'https://visiteA32.com', typologie: 'T4' },
+    { title: 'A31', superficie: '105m²', prix: '230 000 €', url_visite: 'https://visiteA31.com', typologie: 'T4' },
+    { title: 'B25', superficie: '130m²', prix: '270 000 €', url_visite: 'https://visiteB25.com', typologie: 'T5' },
+    { title: 'B24', superficie: '100m²', prix: '210 000 €', url_visite: 'https://visiteB24.com', typologie: 'T3' },
+    { title: 'B22', superficie: '115m²', prix: '235 000 €', url_visite: 'https://visiteB22.com', typologie: 'T4' },
+    { title: 'B21', superficie: '90m²', prix: '200 000 €', url_visite: 'https://visiteB21.com', typologie: 'T3' }
 ];
-
 
 // Objet contenant les images et leurs coordonnées pour le mode R+3
 const imageSets = {
@@ -35,7 +34,7 @@ const imageSets = {
         {
             src: 'Images/R3_1.jpg',
             areas: [
-                { shape: 'circle', coords: '311,414,51', alt: 'A34', title: 'A34', superficie: '120m²', prix: '250 000 €' },
+                { shape: 'circle', coords: '311,414,51', alt: 'A34', title: 'A34' },
                 { shape: 'circle', coords: '364,529,55', alt: 'A33', title: 'A33' },
                 { shape: 'circle', coords: '749,524,57', alt: 'A32', title: 'A32' },
                 { shape: 'circle', coords: '725,410,51', alt: 'A31', title: 'A31' },
@@ -323,8 +322,8 @@ function updateImage(index) {
                     event.preventDefault();
                     const apartment = apartments.find(ap => ap.title === area.title);
                     if (apartment) {
-                        const apartmentInfo = `Appartement n°${apartment.title} - Superficie ${apartment.superficie} - Prix ${apartment.prix}`;
-                        openModal(apartmentInfo);
+                        const apartmentInfo = `Appartement n°${apartment.title} <br> Superficie ${apartment.superficie} <br> Prix ${apartment.prix}`;
+                        openModal(apartmentInfo, apartment.url_visite);
                     }
                 });
                 imageMap.appendChild(areaElement);
@@ -390,12 +389,15 @@ document.addEventListener("DOMContentLoaded", function() {
 // Variables pour la fenêtre modale
 const modal = document.getElementById("modal");
 const modalText = document.getElementById("modalText");
+const visitButton = document.getElementById("visitButton");
 const closeButton = document.querySelector(".close-button");
 
 // Fonction pour ouvrir la fenêtre modale avec les informations de l'appartement
-function openModal(apartmentInfo) {
-    modalText.textContent = apartmentInfo;
+function openModal(apartmentInfo, visitUrl) {
+    modalText.innerHTML = apartmentInfo;
+    visitButton.href = visitUrl;
     modal.style.display = "block";
+    console.log(visitButton.href)
 }
 
 // Ajouter un écouteur d'événement pour fermer la fenêtre modale
