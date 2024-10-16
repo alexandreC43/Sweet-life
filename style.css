@@ -62,6 +62,21 @@ a:hover, button:hover {
 }
 
 
+
+#boussole {
+    position: absolute; /* Positionnement absolu par rapport à #maquette */
+    top: 10px; /* Ajustez pour le placer en haut, peut être modifié selon votre design */
+    right: 10px; /* Ajustez pour le placer à droite, peut être modifié selon votre design */
+    width: 10%; /* Utilisez des valeurs en pourcentage pour rendre la taille responsive */
+    max-width: 100px; /* Limite de taille pour éviter qu'elle devienne trop grande sur des écrans larges */
+    z-index: 10; /* Assurez-vous que la boussole soit au-dessus des autres éléments */
+    border: none;
+}
+
+#maquette {
+    position: relative; /* Positionner le conteneur de manière relative pour que les enfants puissent être positionnés par rapport à lui */
+}
+
 img {
     border-radius: 10px;
     border: 1px solid #bc9c06;
@@ -147,7 +162,7 @@ area {
 
 
 @media (max-width: 1019px) {
-    #maquette img {
+    #mainImage {
         min-width: 300px;
     }
     #container {
@@ -183,7 +198,7 @@ area {
 }
 
 @media (min-width: 1020px) {
-     #maquette img {
+     #mainImage {
         min-width: 900px;
     }
     #logoProjet {
@@ -198,7 +213,7 @@ area {
 
 
     @media (min-width: 1080px) {
-        #maquette img {
+        #mainImage {
            min-width: 900px;
        }
        #logoProjet {
@@ -211,7 +226,7 @@ area {
    
    
        @media (min-width: 1150px) {
-        #maquette img {
+        #mainImage {
            min-width: 900px;
        }
        #logoProjet {
@@ -227,7 +242,7 @@ area {
 
 }
 @media (min-width: 1180px) {
-    #maquette img {
+    #mainImage {
         min-width: 1000px;
     }
     #logoProjet {
