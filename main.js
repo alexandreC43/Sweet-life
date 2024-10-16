@@ -309,7 +309,9 @@ function updateImage(index) {
                 areaElement.title = area.title;
                 areaElement.addEventListener("click", (event) => {
                     event.preventDefault();
-                    const apartmentInfo = `Appartement n°${area.alt} - Superficie 100m² - Prix 200 000 €`;
+                    console.log(area);  // Vérifie si l'objet area contient bien les informations attendues
+                    const apartmentInfo = `Appartement n°${area.alt} - Superficie ${area.superficie} - Prix ${area.prix}`;
+                    console.log(apartmentInfo);  // Vérifie que le texte est bien formé
                     openModal(apartmentInfo);
                 });
                 imageMap.appendChild(areaElement);
