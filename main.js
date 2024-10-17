@@ -552,10 +552,10 @@ function makeMapAreasResponsive() {
 function updateImage(index) {
     const activeImages = imageSets[currentMode];
 
-    // Vérifie si le mode contient des images avec des zones cliquables
     if (Array.isArray(activeImages) && activeImages[index] && activeImages[index].areas) {
         const imageData = activeImages[index];
         maquette.src = imageData.src;
+        maquette.setAttribute('loading', 'lazy'); // Ajoute lazy loading
 
         // Mise à jour des zones cliquables
         imageMap.innerHTML = '';
@@ -579,8 +579,8 @@ function updateImage(index) {
             });
         }
     } else {
-        // Si le mode ne contient que des images (sans zones cliquables)
         maquette.src = activeImages[index];
+        maquette.setAttribute('loading', 'lazy'); // Ajoute lazy loading
         imageMap.innerHTML = '';
     }
 
