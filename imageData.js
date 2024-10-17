@@ -567,252 +567,309 @@ const imageSets = {
         {
             src: 'Images/R1_1.jpg',
             areas: [
-                { shape: 'circle', coords: '311,414,51', alt: 'A34', title: 'A34' },
-                { shape: 'circle', coords: '364,529,55', alt: 'A33', title: 'A33' },
-                { shape: 'circle', coords: '749,524,57', alt: 'A32', title: 'A32' },
-                { shape: 'circle', coords: '725,410,51', alt: 'A31', title: 'A31' },
-                { shape: 'circle', coords: '1195,431,56', alt: 'B25', title: 'B25' },
-                { shape: 'circle', coords: '1366,502,48', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '1597,608,49', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '1580,480,51', alt: 'B21', title: 'B21' }
+                { shape: 'circle', coords: '722,506,64', alt: 'A11', title: 'A11' },
+                { shape: 'circle', coords: '835,632,62', alt: 'A12', title: 'A12' },
+                { shape: 'circle', coords: '646,637,51', alt: 'A13', title: 'A13' },
+                { shape: 'circle', coords: '476,640,62', alt: 'A14', title: 'A14' },
+                { shape: 'circle', coords: '301,640,61', alt: 'A15', title: 'A15' },
+                { shape: 'circle', coords: '319,513,51', alt: 'A16', title: 'A16' },
+                { shape: 'circle', coords: '1558,566,66', alt: 'B11', title: 'B11' },
+                { shape: 'circle', coords: '1687,675,70', alt: 'B12', title: 'B12' },
+                { shape: 'circle', coords: '1511,735,68', alt: 'B13', title: 'B13' },
+                { shape: 'circle', coords: '1373,604,65', alt: 'B14', title: 'B14' },
+                { shape: 'circle', coords: '1203,530,63', alt: 'B15', title: 'B15' }
             ]
         },
         {
             src: 'Images/R1_2.jpg',
             areas: [
-                { shape: 'circle', coords: '778,248,61', alt: 'A31', title: 'A31' },
-                { shape: 'circle', coords: '754,367,57', alt: 'A32', title: 'A32' },
-                { shape: 'circle', coords: '386,308,60', alt: 'A33', title: 'A33' },
-                { shape: 'circle', coords: '388,173,50', alt: 'A34', title: 'A34' },
-                { shape: 'circle', coords: '1597,457,55', alt: 'B21', title: 'B21' },
-                { shape: 'circle', coords: '1554,589,62', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '1376,451,61', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '1236,338,67', alt: 'B25', title: 'B25' }
+                { shape: 'circle', coords: '769,335,71', alt: 'A11', title: 'A11' },
+                { shape: 'circle', coords: '827,481,59', alt: 'A12', title: 'A12' },
+                { shape: 'circle', coords: '657,457,69', alt: 'A13', title: 'A13' },
+                { shape: 'circle', coords: '505,435,54', alt: 'A14', title: 'A14' },
+                { shape: 'circle', coords: '301,390,48', alt: 'A15', title: 'A15' },
+                { shape: 'circle', coords: '373,280,57', alt: 'A16', title: 'A16' },
+                { shape: 'circle', coords: '1581,531,66', alt: 'B11', title: 'B11' },
+                { shape: 'circle', coords: '1656,664,70', alt: 'B12', title: 'B12' },
+                { shape: 'circle', coords: '1464,702,52', alt: 'B13', title: 'B13' },
+                { shape: 'circle', coords: '1382,564,67', alt: 'B14', title: 'B14' },
+                { shape: 'circle', coords: '1251,438,60', alt: 'B15', title: 'B15' }
             ]
         },
         {
             src: 'Images/R1_3.jpg',
             areas: [
-                { shape: 'circle', coords: '802,215,62', alt: 'A31', title: 'A31' },
-                { shape: 'circle', coords: '717,318,57', alt: 'A32', title: 'A32' },
-                { shape: 'circle', coords: '396,203,61', alt: 'A33', title: 'A33' },
-                { shape: 'circle', coords: '460,85,53', alt: 'A34', title: 'A34' },
-                { shape: 'circle', coords: '1509,545,57', alt: 'B21', title: 'B21' },
-                { shape: 'circle', coords: '1425,667,61', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '1295,508,67', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '1198,380,63', alt: 'B25', title: 'B25' }
+                { shape: 'circle', coords: '789,301,62', alt: 'A11', title: 'A11' },
+                { shape: 'circle', coords: '811,454,65', alt: 'A12', title: 'A12' },
+                { shape: 'circle', coords: '649,387,58', alt: 'A13', title: 'A13' },
+                { shape: 'circle', coords: '505,327,51', alt: 'A14', title: 'A14' },
+                { shape: 'circle', coords: '357,265,50', alt: 'A15', title: 'A15' },
+                { shape: 'circle', coords: '457,170,45', alt: 'A16', title: 'A16' },
+                { shape: 'circle', coords: '1521,629,67', alt: 'B11', title: 'B11' },
+                { shape: 'circle', coords: '1515,779,65', alt: 'B12', title: 'B12' },
+                { shape: 'circle', coords: '1353,760,58', alt: 'B13', title: 'B13' },
+                { shape: 'circle', coords: '1308,615,76', alt: 'B14', title: 'B14' },
+                { shape: 'circle', coords: '1224,460,64', alt: 'B15', title: 'B15' }
             ]
         },
         {
             src: 'Images/R1_4.jpg',
             areas: [
-                { shape: 'circle', coords: '817,242,61', alt: 'A31', title: 'A31' },
-                { shape: 'circle', coords: '710,341,57', alt: 'A32', title: 'A32' },
-                { shape: 'circle', coords: '447,191,59', alt: 'A33', title: 'A33' },
-                { shape: 'circle', coords: '545,85,57', alt: 'A34', title: 'A34' },
-                { shape: 'circle', coords: '1427,665,57', alt: 'B21', title: 'B21' },
-                { shape: 'circle', coords: '1327,774,63', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '1229,603,68', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '1180,458,65', alt: 'B25', title: 'B25' }
+                { shape: 'circle', coords: '827,342,55', alt: 'A11', title: 'A11' },
+                { shape: 'circle', coords: '808,475,43', alt: 'A12', title: 'A12' },
+                { shape: 'circle', coords: '661,408,45', alt: 'A13', title: 'A13' },
+                { shape: 'circle', coords: '549,338,36', alt: 'A14', title: 'A14' },
+                { shape: 'circle', coords: '408,254,35', alt: 'A15', title: 'A15' },
+                { shape: 'circle', coords: '536,187,36', alt: 'A16', title: 'A16' },
+                { shape: 'circle', coords: '1443,752,45', alt: 'B11', title: 'B11' },
+                { shape: 'circle', coords: '1408,890,60', alt: 'B12', title: 'B12' },
+                { shape: 'circle', coords: '1250,867,55', alt: 'B13', title: 'B13' },
+                { shape: 'circle', coords: '1252,691,51', alt: 'B14', title: 'B14' },
+                { shape: 'circle', coords: '1220,551,48', alt: 'B15', title: 'B15' }
             ]
         },
         {
             src: 'Images/R1_5.jpg',
             areas: [
-                { shape: 'circle', coords: '869,242,51', alt: 'A31', title: 'A31' },
-                { shape: 'circle', coords: '710,315,74', alt: 'A32', title: 'A32' },
-                { shape: 'circle', coords: '540,120,61', alt: 'A33', title: 'A33' },
-                { shape: 'circle', coords: '667,43,53', alt: 'A34', title: 'A34' },
-                { shape: 'circle', coords: '1239,781,57', alt: 'B21', title: 'B21' },
-                { shape: 'circle', coords: '1070,857,63', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '1061,668,76', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '1105,519,62', alt: 'B25', title: 'B25' }
+                { shape: 'circle', coords: '855,276,50', alt: 'A11', title: 'A11' },
+                { shape: 'circle', coords: '764,391,42', alt: 'A12', title: 'A12' },
+                { shape: 'circle', coords: '685,297,48', alt: 'A13', title: 'A13' },
+                { shape: 'circle', coords: '600,217,46', alt: 'A14', title: 'A14' },
+                { shape: 'circle', coords: '515,104,43', alt: 'A15', title: 'A15' },
+                { shape: 'circle', coords: '671,67,41', alt: 'A16', title: 'A16' },
+                { shape: 'circle', coords: '1247,804,54', alt: 'B11', title: 'B11' },
+                { shape: 'circle', coords: '1166,910,55', alt: 'B12', title: 'B12' },
+                { shape: 'circle', coords: '1027,843,55', alt: 'B13', title: 'B13' },
+                { shape: 'circle', coords: '1096,696,50', alt: 'B14', title: 'B14' },
+                { shape: 'circle', coords: '1133,550,53', alt: 'B15', title: 'B15' }
             ]
         },
         {
             src: 'Images/R1_6.jpg',
             areas: [
-                { shape: 'circle', coords: '1062,345,66', alt: 'A31', title: 'A31' },
-                { shape: 'circle', coords: '886,373,59', alt: 'A32', title: 'A32' },
-                { shape: 'circle', coords: '828,144,61', alt: 'A33', title: 'A33' },
-                { shape: 'circle', coords: '995,102,47', alt: 'A34', title: 'A34' },
-                { shape: 'circle', coords: '1132,922,61', alt: 'B21', title: 'B21' },
-                { shape: 'circle', coords: '927,939,75', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '1027,773,74', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '1136,654,61', alt: 'B25', title: 'B25' }
+                { shape: 'circle', coords: '1063,337,59', alt: 'A11', title: 'A11' },
+                { shape: 'circle', coords: '910,420,45', alt: 'A12', title: 'A12' },
+                { shape: 'circle', coords: '883,302,43', alt: 'A13', title: 'A13' },
+                { shape: 'circle', coords: '864,194,45', alt: 'A14', title: 'A14' },
+                { shape: 'circle', coords: '837,90,49', alt: 'A15', title: 'A15' },
+                { shape: 'circle', coords: '996,89,35', alt: 'A16', title: 'A16' },
+                { shape: 'circle', coords: '1140,909,40', alt: 'B11', title: 'B11' },
+                { shape: 'circle', coords: '984,982,54', alt: 'B12', title: 'B12' },
+                { shape: 'circle', coords: '906,871,55', alt: 'B13', title: 'B13' },
+                { shape: 'circle', coords: '1042,759,54', alt: 'B14', title: 'B14' },
+                { shape: 'circle', coords: '1159,642,59', alt: 'B15', title: 'B15' }
             ]
         },
         {
             src: 'Images/R1_7.jpg',
             areas: [
-                { shape: 'circle', coords: '1171,430,59', alt: 'A31', title: 'A31' },
-                { shape: 'circle', coords: '986,389,71', alt: 'A32', title: 'A32' },
-                { shape: 'circle', coords: '1107,189,56', alt: 'A33', title: 'A33' },
-                { shape: 'circle', coords: '1300,188,54', alt: 'A34', title: 'A34' },
-                { shape: 'circle', coords: '764,960,57', alt: 'B21', title: 'B21' },
-                { shape: 'circle', coords: '544,917,87', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '801,789,71', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '983,719,62', alt: 'B25', title: 'B25' }
+                { shape: 'circle', coords: '1162,418,45', alt: 'A11', title: 'A11' },
+                { shape: 'circle', coords: '949,443,41', alt: 'A12', title: 'A12' },
+                { shape: 'circle', coords: '1023,329,39', alt: 'A13', title: 'A13' },
+                { shape: 'circle', coords: '1077,233,41', alt: 'A14', title: 'A14' },
+                { shape: 'circle', coords: '1152,133,53', alt: 'A15', title: 'A15' },
+                { shape: 'circle', coords: '1281,181,61', alt: 'A16', title: 'A16' },
+                { shape: 'circle', coords: '759,964,57', alt: 'B11', title: 'B11' },
+                { shape: 'circle', coords: '574,967,53', alt: 'B12', title: 'B12' },
+                { shape: 'circle', coords: '569,837,56', alt: 'B13', title: 'B13' },
+                { shape: 'circle', coords: '810,800,49', alt: 'B14', title: 'B14' },
+                { shape: 'circle', coords: '989,726,52', alt: 'B15', title: 'B15' }
             ]
         },
         {
             src: 'Images/R1_8.jpg',
             areas: [
-                { shape: 'circle', coords: '1203,423,71', alt: 'A31', title: 'A31' },
-                { shape: 'circle', coords: '1043,358,65', alt: 'A32', title: 'A32' },
-                { shape: 'circle', coords: '1236,176,68', alt: 'A33', title: 'A33' },
-                { shape: 'circle', coords: '1435,203,52', alt: 'A34', title: 'A34' },
-                { shape: 'circle', coords: '621,857,63', alt: 'B21', title: 'B21' },
-                { shape: 'circle', coords: '428,801,81', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '727,709,73', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '925,675,68', alt: 'B25', title: 'B25' }
+                { shape: 'circle', coords: '1205,518,48', alt: 'A11', title: 'A11' },
+                { shape: 'circle', coords: '999,510,58', alt: 'A12', title: 'A12' },
+                { shape: 'circle', coords: '1099,408,52', alt: 'A13', title: 'A13' },
+                { shape: 'circle', coords: '1205,332,48', alt: 'A14', title: 'A14' },
+                { shape: 'circle', coords: '1308,239,53', alt: 'A15', title: 'A15' },
+                { shape: 'circle', coords: '1420,301,44', alt: 'A16', title: 'A16' },
+                { shape: 'circle', coords: '630,956,58', alt: 'B11', title: 'B11' },
+                { shape: 'circle', coords: '445,949,55', alt: 'B12', title: 'B12' },
+                { shape: 'circle', coords: '474,839,47', alt: 'B13', title: 'B13' },
+                { shape: 'circle', coords: '739,828,65', alt: 'B14', title: 'B14' },
+                { shape: 'circle', coords: '942,791,51', alt: 'B15', title: 'B15' }
             ]
         },
         {
             src: 'Images/R1_9.jpg',
             areas: [
-                { shape: 'circle', coords: '1292,516,70', alt: 'A31', title: 'A31' },
-                { shape: 'circle', coords: '1215,387,59', alt: 'A32', title: 'A32' },
-                { shape: 'circle', coords: '1521,298,53', alt: 'A33', title: 'A33' },
-                { shape: 'circle', coords: '1663,390,53', alt: 'A34', title: 'A34' },
-                { shape: 'circle', coords: '474,710,62', alt: 'B21', title: 'B21' },
-                { shape: 'circle', coords: '389,587,61', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '659,608,65', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '866,629,54', alt: 'B25', title: 'B25' }
+                { shape: 'circle', coords: '1293,610,51', alt: 'A11', title: 'A11' },
+                { shape: 'circle', coords: '1111,534,45', alt: 'A12', title: 'A12' },
+                { shape: 'circle', coords: '1289,477,45', alt: 'A13', title: 'A13' },
+                { shape: 'circle', coords: '1437,428,49', alt: 'A14', title: 'A14' },
+                { shape: 'circle', coords: '1594,383,53', alt: 'A15', title: 'A15' },
+                { shape: 'circle', coords: '1647,485,55', alt: 'A16', title: 'A16' },
+                { shape: 'circle', coords: '474,811,47', alt: 'B11', title: 'B11' },
+                { shape: 'circle', coords: '298,745,69', alt: 'B12', title: 'B12' },
+                { shape: 'circle', coords: '452,655,57', alt: 'B13', title: 'B13' },
+                { shape: 'circle', coords: '637,718,68', alt: 'B14', title: 'B14' },
+                { shape: 'circle', coords: '859,763,60', alt: 'B15', title: 'B15' }
             ]
         },
         {
             src: 'Images/R1_10.jpg',
             areas: [
-                { shape: 'circle', coords: '1231,561,47', alt: 'A31', title: 'A31' },
-                { shape: 'circle', coords: '1191,434,56', alt: 'A32', title: 'A32' },
-                { shape: 'circle', coords: '1539,400,63', alt: 'A33', title: 'A33' },
-                { shape: 'circle', coords: '1645,532,62', alt: 'A34', title: 'A34' },
-                { shape: 'circle', coords: '382,551,56', alt: 'B21', title: 'B21' },
-                { shape: 'circle', coords: '342,408,72', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '581,497,58', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '756,579,71', alt: 'B25', title: 'B25' }
+                { shape: 'circle', coords: '1225,656,54', alt: 'A11', title: 'A11' },
+                { shape: 'circle', coords: '1101,540,51', alt: 'A12', title: 'A12' },
+                { shape: 'circle', coords: '1296,530,46', alt: 'A13', title: 'A13' },
+                { shape: 'circle', coords: '1455,522,43', alt: 'A14', title: 'A14' },
+                { shape: 'circle', coords: '1647,515,57', alt: 'A15', title: 'A15' },
+                { shape: 'circle', coords: '1659,636,44', alt: 'A16', title: 'A16' },
+                { shape: 'circle', coords: '352,663,46', alt: 'B11', title: 'B11' },
+                { shape: 'circle', coords: '237,566,63', alt: 'B12', title: 'B12' },
+                { shape: 'circle', coords: '408,506,50', alt: 'B13', title: 'B13' },
+                { shape: 'circle', coords: '559,616,53', alt: 'B14', title: 'B14' },
+                { shape: 'circle', coords: '732,695,68', alt: 'B15', title: 'B15' }
             ]
         },
         {
             src: 'Images/R1_11.jpg',
             areas: [
-                { shape: 'circle', coords: '1215,613,56', alt: 'A31', title: 'A31' },
-                { shape: 'circle', coords: '1222,483,59', alt: 'A32', title: 'A32' },
-                { shape: 'circle', coords: '1602,514,64', alt: 'A33', title: 'A33' },
-                { shape: 'circle', coords: '1651,664,61', alt: 'A34', title: 'A34' },
-                { shape: 'circle', coords: '366,470,63', alt: 'B21', title: 'B21' },
-                { shape: 'circle', coords: '403,337,61', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '586,446,61', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '736,554,63', alt: 'B25', title: 'B25' }
+                { shape: 'circle', coords: '1244,716,55', alt: 'A11', title: 'A11' },
+                { shape: 'circle', coords: '1135,581,45', alt: 'A12', title: 'A12' },
+                { shape: 'circle', coords: '1321,605,45', alt: 'A13', title: 'A13' },
+                { shape: 'circle', coords: '1491,621,56', alt: 'A14', title: 'A14' },
+                { shape: 'circle', coords: '1693,642,49', alt: 'A15', title: 'A15' },
+                { shape: 'circle', coords: '1645,752,52', alt: 'A16', title: 'A16' },
+                { shape: 'circle', coords: '369,569,49', alt: 'B11', title: 'B11' },
+                { shape: 'circle', coords: '315,447,50', alt: 'B12', title: 'B12' },
+                { shape: 'circle', coords: '489,429,48', alt: 'B13', title: 'B13' },
+                { shape: 'circle', coords: '581,554,62', alt: 'B14', title: 'B14' },
+                { shape: 'circle', coords: '710,661,54', alt: 'B15', title: 'B15' }
             ]
         },
         {
             src: 'Images/R1_12.jpg',
             areas: [
-                { shape: 'circle', coords: '1102,597,70', alt: 'A31', title: 'A31' },
-                { shape: 'circle', coords: '1183,474,58', alt: 'A32', title: 'A32' },
-                { shape: 'circle', coords: '1529,571,68', alt: 'A33', title: 'A33' },
-                { shape: 'circle', coords: '1503,726,55', alt: 'A34', title: 'A34' },
-                { shape: 'circle', coords: '369,305,64', alt: 'B21', title: 'B21' },
-                { shape: 'circle', coords: '473,173,66', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '590,309,63', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '686,444,59', alt: 'B25', title: 'B25' }
+                { shape: 'circle', coords: '1127,691,44', alt: 'A11', title: 'A11' },
+                { shape: 'circle', coords: '1098,555,49', alt: 'A12', title: 'A12' },
+                { shape: 'circle', coords: '1266,613,42', alt: 'A13', title: 'A13' },
+                { shape: 'circle', coords: '1411,659,56', alt: 'A14', title: 'A14' },
+                { shape: 'circle', coords: '1606,732,55', alt: 'A15', title: 'A15' },
+                { shape: 'circle', coords: '1491,816,50', alt: 'A16', title: 'A16' },
+                { shape: 'circle', coords: '378,394,49', alt: 'B11', title: 'B11' },
+                { shape: 'circle', coords: '374,270,43', alt: 'B12', title: 'B12' },
+                { shape: 'circle', coords: '545,290,59', alt: 'B13', title: 'B13' },
+                { shape: 'circle', coords: '569,430,64', alt: 'B14', title: 'B14' },
+                { shape: 'circle', coords: '671,553,48', alt: 'B15', title: 'B15' }
             ]
         },
         {
             src: 'Images/R1_13.jpg',
             areas: [
-                { shape: 'circle', coords: '1065,694,61', alt: 'A31', title: 'A31' },
-                { shape: 'circle', coords: '1194,590,62', alt: 'A32', title: 'A32' },
-                { shape: 'circle', coords: '1455,773,71', alt: 'A33', title: 'A33' },
-                { shape: 'circle', coords: '1358,904,63', alt: 'A34', title: 'A34' },
-                { shape: 'circle', coords: '581,230,47', alt: 'B21', title: 'B21' },
-                { shape: 'circle', coords: '716,142,59', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '754,291,64', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '752,432,47', alt: 'B25', title: 'B25' }
+                { shape: 'circle', coords: '1093,728,65', alt: 'A11', title: 'A11' },
+                { shape: 'circle', coords: '1137,586,40', alt: 'A12', title: 'A12' },
+                { shape: 'circle', coords: '1254,670,41', alt: 'A13', title: 'A13' },
+                { shape: 'circle', coords: '1369,751,51', alt: 'A14', title: 'A14' },
+                { shape: 'circle', coords: '1518,857,44', alt: 'A15', title: 'A15' },
+                { shape: 'circle', coords: '1362,920,50', alt: 'A16', title: 'A16' },
+                { shape: 'circle', coords: '570,266,47', alt: 'B11', title: 'B11' },
+                { shape: 'circle', coords: '630,149,39', alt: 'B12', title: 'B12' },
+                { shape: 'circle', coords: '786,202,48', alt: 'B13', title: 'B13' },
+                { shape: 'circle', coords: '732,326,56', alt: 'B14', title: 'B14' },
+                { shape: 'circle', coords: '725,465,55', alt: 'B15', title: 'B15' }
             ]
         },
         {
             src: 'Images/R1_14.jpg',
             areas: [
-                { shape: 'circle', coords: '888,701,53', alt: 'A31', title: 'A31' },
-                { shape: 'circle', coords: '1058,635,60', alt: 'A32', title: 'A32' },
-                { shape: 'circle', coords: '1231,879,57', alt: 'A33', title: 'A33' },
-                { shape: 'circle', coords: '1063,965,59', alt: 'A34', title: 'A34' },
-                { shape: 'circle', coords: '627,190,56', alt: 'B21', title: 'B21' },
-                { shape: 'circle', coords: '804,125,61', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '776,282,52', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '702,419,63', alt: 'B25', title: 'B25' }
+                { shape: 'circle', coords: '881,712,50', alt: 'A11', title: 'A11' },
+                { shape: 'circle', coords: '1018,602,51', alt: 'A12', title: 'A12' },
+                { shape: 'circle', coords: '1101,722,53', alt: 'A13', title: 'A13' },
+                { shape: 'circle', coords: '1167,824,44', alt: 'A14', title: 'A14' },
+                { shape: 'circle', coords: '1260,951,55', alt: 'A15', title: 'A15' },
+                { shape: 'circle', coords: '1083,977,48', alt: 'A16', title: 'A16' },
+                { shape: 'circle', coords: '620,198,56', alt: 'B11', title: 'B11' },
+                { shape: 'circle', coords: '739,110,49', alt: 'B12', title: 'B12' },
+                { shape: 'circle', coords: '851,190,54', alt: 'B13', title: 'B13' },
+                { shape: 'circle', coords: '755,312,55', alt: 'B14', title: 'B14' },
+                { shape: 'circle', coords: '678,429,54', alt: 'B15', title: 'B15' }
             ]
         },
         {
             src: 'Images/R1_15.jpg',
             areas: [
-                { shape: 'circle', coords: '735,659,63', alt: 'A31', title: 'A31' },
-                { shape: 'circle', coords: '920,659,54', alt: 'A32', title: 'A32' },
-                { shape: 'circle', coords: '884,920,54', alt: 'A33', title: 'A33' },
-                { shape: 'circle', coords: '668,946,48', alt: 'A34', title: 'A34' },
-                { shape: 'circle', coords: '933,122,51', alt: 'B21', title: 'B21' },
-                { shape: 'circle', coords: '1123,145,60', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '965,258,60', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '808,336,58', alt: 'B25', title: 'B25' }
+                { shape: 'circle', coords: 'NaN', alt: 'A11', title: 'A11' },
+                { shape: 'circle', coords: 'NaN', alt: 'A12', title: 'A12' },
+                { shape: 'circle', coords: 'NaN', alt: 'A13', title: 'A13' },
+                { shape: 'circle', coords: 'NaN', alt: 'A14', title: 'A14' },
+                { shape: 'circle', coords: 'NaN', alt: 'A15', title: 'A15' },
+                { shape: 'circle', coords: 'NaN', alt: 'A16', title: 'A16' },
+                { shape: 'circle', coords: 'NaN', alt: 'B11', title: 'B11' },
+                { shape: 'circle', coords: 'NaN', alt: 'B12', title: 'B12' },
+                { shape: 'circle', coords: 'NaN', alt: 'B13', title: 'B13' },
+                { shape: 'circle', coords: 'NaN', alt: 'B14', title: 'B14' },
+                { shape: 'circle', coords: 'NaN', alt: 'B15', title: 'B15' }
             ]
         },
         {
             src: 'Images/R1_16.jpg',
             areas: [
-                { shape: 'circle', coords: '724,596,58', alt: 'A31', title: 'A31' },
-                { shape: 'circle', coords: '909,645,62', alt: 'A32', title: 'A32' },
-                { shape: 'circle', coords: '723,864,70', alt: 'A33', title: 'A33' },
-                { shape: 'circle', coords: '512,829,60', alt: 'A34', title: 'A34' },
-                { shape: 'circle', coords: '1229,140,56', alt: 'B21', title: 'B21' },
-                { shape: 'circle', coords: '1409,195,62', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '1190,268,60', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '998,315,61', alt: 'B25', title: 'B25' }
+                { shape: 'circle', coords: '730,573,60', alt: 'A11', title: 'A11' },
+                { shape: 'circle', coords: '937,563,59', alt: 'A12', title: 'A12' },
+                { shape: 'circle', coords: '849,659,41', alt: 'A13', title: 'A13' },
+                { shape: 'circle', coords: '759,756,41', alt: 'A14', title: 'A14' },
+                { shape: 'circle', coords: '655,894,59', alt: 'A15', title: 'A15' },
+                { shape: 'circle', coords: '530,800,44', alt: 'A16', title: 'A16' },
+                { shape: 'circle', coords: '1210,111,53', alt: 'B11', title: 'B11' },
+                { shape: 'circle', coords: '1393,113,56', alt: 'B12', title: 'B12' },
+                { shape: 'circle', coords: '1376,203,45', alt: 'B13', title: 'B13' },
+                { shape: 'circle', coords: '1164,235,48', alt: 'B14', title: 'B14' },
+                { shape: 'circle', coords: '984,275,51', alt: 'B15', title: 'B15' }
             ]
         },
         {
             src: 'Images/R1_17.jpg',
             areas: [
-                { shape: 'circle', coords: '716,436,63', alt: 'A31', title: 'A31' },
-                { shape: 'circle', coords: '878,515,66', alt: 'A32', title: 'A32' },
-                { shape: 'circle', coords: '610,697,58', alt: 'A33', title: 'A33' },
-                { shape: 'circle', coords: '427,630,57', alt: 'A34', title: 'A34' },
-                { shape: 'circle', coords: '1394,93,52', alt: 'B21', title: 'B21' },
-                { shape: 'circle', coords: '1543,173,72', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '1290,205,58', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '1095,217,63', alt: 'B25', title: 'B25' }
-            ]
-        },
-        {
-            src: 'Images/R1_18.jpg',
+                { shape: 'circle', coords: '752,539,42', alt: 'A11', title: 'A11' },
+                { shape: 'circle', coords: '947,568,48', alt: 'A12', title: 'A12' },
+                { shape: 'circle', coords: '816,649,49', alt: 'A13', title: 'A13' },
+                { shape: 'circle', coords: '693,730,50', alt: 'A14', title: 'A14' },
+                { shape: 'circle', coords: '530,831,47', alt: 'A15', title: 'A15' },
+                { shape: 'circle', coords: '439,728,51', alt: 'A16', title: 'A16' },
+                { shape: 'circle', coords: '1391,176,50', alt: 'B11', title: 'B11' },
+                { shape: 'circle', coords: '1559,198,55', alt: 'B12', title: 'B12' },
+                { shape: 'circle', coords: '1511,306,55', alt: 'B13', title: 'B13' },
+                { shape: 'circle', coords: '1288,281,43', alt: 'B14', title: 'B14' },
+                { shape: 'circle', coords: '1094,298,59', alt: 'B15', title: 'B15' }
+                    ]
+                },
+                {
+                    src: 'Images/R1_18.jpg',
             areas: [
-                { shape: 'circle', coords: '742,407,68', alt: 'A31', title: 'A31' },
-                { shape: 'circle', coords: '854,522,63', alt: 'A32', title: 'A32' },
-                { shape: 'circle', coords: '516,651,62', alt: 'A33', title: 'A33' },
-                { shape: 'circle', coords: '377,548,51', alt: 'A34', title: 'A34' },
-                { shape: 'circle', coords: '1529,191,59', alt: 'B21', title: 'B21' },
-                { shape: 'circle', coords: '1653,297,65', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '1383,283,52', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '1175,272,66', alt: 'B25', title: 'B25' }
+                { shape: 'circle', coords: '768,519,58', alt: 'A11', title: 'A11' },
+                { shape: 'circle', coords: '930,579,56', alt: 'A12', title: 'A12' },
+                { shape: 'circle', coords: '781,655,58', alt: 'A13', title: 'A13' },
+                { shape: 'circle', coords: '625,702,59', alt: 'A14', title: 'A14' },
+                { shape: 'circle', coords: '437,759,49', alt: 'A15', title: 'A15' },
+                { shape: 'circle', coords: '386,640,53', alt: 'A16', title: 'A16' },
+                { shape: 'circle', coords: '1537,280,46', alt: 'B11', title: 'B11' },
+                { shape: 'circle', coords: '1703,332,61', alt: 'B12', title: 'B12' },
+                { shape: 'circle', coords: '1597,437,51', alt: 'B13', title: 'B13' },
+                { shape: 'circle', coords: '1403,368,54', alt: 'B14', title: 'B14' },
+                { shape: 'circle', coords: '1196,352,54', alt: 'B15', title: 'B15' }
             ]
         },
         {
             src: 'Images/R1_19.jpg',
             areas: [
-                { shape: 'circle', coords: '677,321,61', alt: 'A31', title: 'A31' },
-                { shape: 'circle', coords: '735,448,58', alt: 'A32', title: 'A32' },
-                { shape: 'circle', coords: '350,507,57', alt: 'A33', title: 'A33' },
-                { shape: 'circle', coords: '271,383,60', alt: 'A34', title: 'A34' },
-                { shape: 'circle', coords: '1531,258,54', alt: 'B21', title: 'B21' },
-                { shape: 'circle', coords: '1578,401,64', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '1343,331,59', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '1151,284,61', alt: 'B25', title: 'B25' }
+                { shape: 'circle', coords: '684,431,53', alt: 'A11', title: 'A11' },
+                { shape: 'circle', coords: '835,530,52', alt: 'A12', title: 'A12' },
+                { shape: 'circle', coords: '645,564,51', alt: 'A13', title: 'A13' },
+                { shape: 'circle', coords: '473,590,42', alt: 'A14', title: 'A14' },
+                { shape: 'circle', coords: '279,605,52', alt: 'A15', title: 'A15' },
+                { shape: 'circle', coords: '284,485,53', alt: 'A16', title: 'A16' },
+                { shape: 'circle', coords: '1550,357,49', alt: 'B11', title: 'B11' },
+                { shape: 'circle', coords: '1662,445,43', alt: 'B12', title: 'B12' },
+                { shape: 'circle', coords: '1538,510,56', alt: 'B13', title: 'B13' },
+                { shape: 'circle', coords: '1354,423,56', alt: 'B14', title: 'B14' },
+                { shape: 'circle', coords: '1166,359,57', alt: 'B15', title: 'B15' }
             ]
-        }
-    ]
-};
+                }
+            ]
+        };
 
 // Exporter l'objet
 export default imageSets;
