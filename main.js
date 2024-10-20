@@ -51,7 +51,17 @@ const apartments = [
     { title: 'B13', superficie: '115m²', prix: '235 000 €', url_visite: 'https://visiteB22.com', typologie: 'T4' },
     { title: 'B12', superficie: '90m²', prix: '200 000 €', url_visite: 'https://visiteB21.com', typologie: 'T3' },
     { title: 'B11', superficie: '90m²', prix: '200 000 €', url_visite: 'https://visiteB21.com', typologie: 'T3' },
-
+    { title: 'A01', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
+    { title: 'A02', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
+    { title: 'A03', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
+    { title: 'A04', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
+    { title: 'A05', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
+    { title: 'A06', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
+    { title: 'B01', superficie: '130m²', prix: '270 000 €', url_visite: 'https://visiteB25.com', typologie: 'T5' },
+    { title: 'B02', superficie: '100m²', prix: '210 000 €', url_visite: 'https://visiteB24.com', typologie: 'T3' },
+    { title: 'B03', superficie: '115m²', prix: '235 000 €', url_visite: 'https://visiteB22.com', typologie: 'T4' },
+    { title: 'B04', superficie: '90m²', prix: '200 000 €', url_visite: 'https://visiteB21.com', typologie: 'T3' },
+    { title: 'B05', superficie: '90m²', prix: '200 000 €', url_visite: 'https://visiteB21.com', typologie: 'T3' },
 ];
 
 
@@ -200,3 +210,22 @@ function updateCompass(index) {
     const angle = index * 20; // Ajustez la logique de rotation selon vos besoins
     boussole.style.transform = `rotate(${angle}deg)`;
 }
+
+
+
+
+// Script pour ouvrir et fermer la modaleMap
+document.getElementById('voirQuartier').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.getElementById('modalMaps').style.display = 'flex';
+});
+
+document.querySelector('.close').addEventListener('click', function () {
+    document.getElementById('modalMaps').style.display = 'none';
+});
+
+window.addEventListener('click', function (e) {
+    if (e.target === document.getElementById('modalMaps')) {
+        document.getElementById('modalMaps').style.display = 'none';
+    }
+});

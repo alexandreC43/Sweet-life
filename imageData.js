@@ -868,7 +868,297 @@ const imageSets = {
                 { shape: 'circle', coords: '1166,359,57', alt: 'B15', title: 'B15' }
             ]
                 }
+            ], 'RDC': [
+                {
+                    src: 'Images/RDC_1.jpg',
+                    areas: [
+                        { shape: 'circle', coords: '712,567,49', alt: 'A01', title: 'A01' },
+                        { shape: 'circle', coords: '827,671,36', alt: 'A02', title: 'A02' },
+                        { shape: 'circle', coords: '639,676,46', alt: 'A03', title: 'A03' },
+                        { shape: 'circle', coords: '473,682,43', alt: 'A04', title: 'A04' },
+                        { shape: 'circle', coords: '280,671,46', alt: 'A05', title: 'A05' },
+                        { shape: 'circle', coords: '313,560,46', alt: 'A06', title: 'A06' },
+                        { shape: 'circle', coords: '1581,611,39', alt: 'B01', title: 'B01' },
+                        { shape: 'circle', coords: '1520,764,47', alt: 'B02', title: 'B02' },
+                        { shape: 'circle', coords: '1367,648,44', alt: 'B03', title: 'B03' },
+                        { shape: 'circle', coords: '1221,554,39', alt: 'B04', title: 'B04' }
+                    ]
+                },
+                {
+                    src: 'Images/RDC_2.jpg',
+                    areas: [
+                        { shape: 'circle', coords: '769,389,37', alt: 'A01', title: 'A01' },
+                        { shape: 'circle', coords: '837,504,36', alt: 'A02', title: 'A02' },
+                        { shape: 'circle', coords: '653,487,47', alt: 'A03', title: 'A03' },
+                        { shape: 'circle', coords: '502,452,40', alt: 'A04', title: 'A04' },
+                        { shape: 'circle', coords: '308,406,40', alt: 'A05', title: 'A05' },
+                        { shape: 'circle', coords: '379,316,39', alt: 'A06', title: 'A06' },
+                        { shape: 'circle', coords: '1588,575,54', alt: 'B01', title: 'B01' },
+                        { shape: 'circle', coords: '1467,723,51', alt: 'B02', title: 'B02' },
+                        { shape: 'circle', coords: '1376,576,45', alt: 'B03', title: 'B03' },
+                        { shape: 'circle', coords: '1260,474,51', alt: 'B04', title: 'B04' }
+                    ]
+                },
+                {
+                    src: 'Images/RDC_3.jpg',
+                    areas: [
+                        { shape: 'circle', coords: '787,360,37', alt: 'A01', title: 'A01' },
+                        { shape: 'circle', coords: '794,474,41', alt: 'A02', title: 'A02' },
+                        { shape: 'circle', coords: '637,416,33', alt: 'A03', title: 'A03' },
+                        { shape: 'circle', coords: '505,374,38', alt: 'A04', title: 'A04' },
+                        { shape: 'circle', coords: '345,308,45', alt: 'A05', title: 'A05' },
+                        { shape: 'circle', coords: '454,220,36', alt: 'A06', title: 'A06' },
+                        { shape: 'circle', coords: '1504,686,46', alt: 'B01', title: 'B01' },
+                        { shape: 'circle', coords: '1335,803,45', alt: 'B02', title: 'B02' },
+                        { shape: 'circle', coords: '1299,631,41', alt: 'B03', title: 'B03' },
+                        { shape: 'circle', coords: '1226,517,48', alt: 'B04', title: 'B04' }
+                    ]
+                },
+                {
+                    src: 'Images/RDC_4.jpg',
+                    areas: [
+                        { shape: 'circle', coords: '822,396,35', alt: 'A01', title: 'A01' },
+                        { shape: 'circle', coords: '803,512,39', alt: 'A02', title: 'A02' },
+                        { shape: 'circle', coords: '654,426,39', alt: 'A03', title: 'A03' },
+                        { shape: 'circle', coords: '549,357,38', alt: 'A04', title: 'A04' },
+                        { shape: 'circle', coords: '398,279,45', alt: 'A05', title: 'A05' },
+                        { shape: 'circle', coords: '528,226,40', alt: 'A06', title: 'A06' },
+                        { shape: 'circle', coords: '1437,799,45', alt: 'B01', title: 'B01' },
+                        { shape: 'circle', coords: '1234,905,59', alt: 'B02', title: 'B02' },
+                        { shape: 'circle', coords: '1247,736,54', alt: 'B03', title: 'B03' },
+                        { shape: 'circle', coords: '1208,600,54', alt: 'B04', title: 'B04' }
+                    ]
+                },
+                {
+                    src: 'Images/RDC_5.jpg',
+                    areas: [
+                        { shape: 'circle', coords: '852,308,52', alt: 'A01', title: 'A01' },
+                        { shape: 'circle', coords: '777,431,41', alt: 'A02', title: 'A02' },
+                        { shape: 'circle', coords: '681,326,36', alt: 'A03', title: 'A03' },
+                        { shape: 'circle', coords: '608,237,35', alt: 'A04', title: 'A04' },
+                        { shape: 'circle', coords: '511,137,35', alt: 'A05', title: 'A05' },
+                        { shape: 'circle', coords: '667,104,40', alt: 'A06', title: 'A06' },
+                        { shape: 'circle', coords: '1259,851,41', alt: 'B01', title: 'B01' },
+                        { shape: 'circle', coords: '996,881,54', alt: 'B02', title: 'B02' },
+                        { shape: 'circle', coords: '1088,731,59', alt: 'B03', title: 'B03' },
+                        { shape: 'circle', coords: '1127,600,49', alt: 'B04', title: 'B04' }
+                    ]
+                },
+                {
+                    src: 'Images/RDC_6.jpg',
+                    areas: [
+                        { shape: 'circle', coords: '1052,352,41', alt: 'A01', title: 'A01' },
+                        { shape: 'circle', coords: '906,448,42', alt: 'A02', title: 'A02' },
+                        { shape: 'circle', coords: '888,336,39', alt: 'A03', title: 'A03' },
+                        { shape: 'circle', coords: '867,240,35', alt: 'A04', title: 'A04' },
+                        { shape: 'circle', coords: '837,125,46', alt: 'A05', title: 'A05' },
+                        { shape: 'circle', coords: '989,123,46', alt: 'A06', title: 'A06' },
+                        { shape: 'circle', coords: '1142,944,45', alt: 'B01', title: 'B01' },
+                        { shape: 'circle', coords: '889,926,46', alt: 'B02', title: 'B02' },
+                        { shape: 'circle', coords: '1042,801,51', alt: 'B03', title: 'B03' },
+                        { shape: 'circle', coords: '1152,685,51', alt: 'B04', title: 'B04' }
+                    ]
+                },
+                {
+                    src: 'Images/RDC_7.jpg',
+                    areas: [
+                        { shape: 'circle', coords: '1166,450,38', alt: 'A01', title: 'A01' },
+                        { shape: 'circle', coords: '972,478,40', alt: 'A02', title: 'A02' },
+                        { shape: 'circle', coords: '1028,368,36', alt: 'A03', title: 'A03' },
+                        { shape: 'circle', coords: '1094,276,37', alt: 'A04', title: 'A04' },
+                        { shape: 'circle', coords: '1154,160,42', alt: 'A05', title: 'A05' },
+                        { shape: 'circle', coords: '1294,218,40', alt: 'A06', title: 'A06' },
+                        { shape: 'circle', coords: '767,980,50', alt: 'B01', title: 'B01' },
+                        { shape: 'circle', coords: '576,878,51', alt: 'B02', title: 'B02' },
+                        { shape: 'circle', coords: '811,838,56', alt: 'B03', title: 'B03' },
+                        { shape: 'circle', coords: '993,762,49', alt: 'B04', title: 'B04' }
+                    ]
+                },
+                {
+                    src: 'Images/RDC_8.jpg',
+                    areas: [
+                        { shape: 'circle', coords: '1211,537,51', alt: 'A01', title: 'A01' },
+                        { shape: 'circle', coords: '1018,541,45', alt: 'A02', title: 'A02' },
+                        { shape: 'circle', coords: '1121,450,39', alt: 'A03', title: 'A03' },
+                        { shape: 'circle', coords: '1206,360,36', alt: 'A04', title: 'A04' },
+                        { shape: 'circle', coords: '1321,270,52', alt: 'A05', title: 'A05' },
+                        { shape: 'circle', coords: '1427,338,51', alt: 'A06', title: 'A06' },
+                        { shape: 'circle', coords: '657,1021,68', alt: 'B01', title: 'B01' },
+                        { shape: 'circle', coords: '491,880,72', alt: 'B02', title: 'B02' },
+                        { shape: 'circle', coords: '732,864,63', alt: 'B03', title: 'B03' },
+                        { shape: 'circle', coords: '924,841,55', alt: 'B04', title: 'B04' }
+                    ]
+                },
+                {
+                    src: 'Images/RDC_9.jpg',
+                    areas: [
+                        { shape: 'circle', coords: '1321,630,47', alt: 'A01', title: 'A01' },
+                        { shape: 'circle', coords: '1137,579,55', alt: 'A02', title: 'A02' },
+                        { shape: 'circle', coords: '1306,523,38', alt: 'A03', title: 'A03' },
+                        { shape: 'circle', coords: '1452,473,44', alt: 'A04', title: 'A04' },
+                        { shape: 'circle', coords: '1613,421,41', alt: 'A05', title: 'A05' },
+                        { shape: 'circle', coords: '1664,516,48', alt: 'A06', title: 'A06' },
+                        { shape: 'circle', coords: '479,864,53', alt: 'B01', title: 'B01' },
+                        { shape: 'circle', coords: '450,696,56', alt: 'B02', title: 'B02' },
+                        { shape: 'circle', coords: '661,754,60', alt: 'B03', title: 'B03' },
+                        { shape: 'circle', coords: '854,805,62', alt: 'B04', title: 'B04' }
+                    ]
+                },
+                {
+                    src: 'Images/RDC_10.jpg',
+                    areas: [
+                        { shape: 'circle', coords: '1252,687,49', alt: 'A01', title: 'A01' },
+                        { shape: 'circle', coords: '1118,588,40', alt: 'A02', title: 'A02' },
+                        { shape: 'circle', coords: '1320,576,50', alt: 'A03', title: 'A03' },
+                        { shape: 'circle', coords: '1471,560,51', alt: 'A04', title: 'A04' },
+                        { shape: 'circle', coords: '1672,554,44', alt: 'A05', title: 'A05' },
+                        { shape: 'circle', coords: '1657,660,42', alt: 'A06', title: 'A06' },
+                        { shape: 'circle', coords: '372,711,57', alt: 'B01', title: 'B01' },
+                        { shape: 'circle', coords: '413,543,48', alt: 'B02', title: 'B02' },
+                        { shape: 'circle', coords: '564,655,54', alt: 'B03', title: 'B03' },
+                        { shape: 'circle', coords: '728,740,44', alt: 'B04', title: 'B04' }
+                    ]
+                },
+                {
+                    src: 'Images/RDC_11.jpg',
+                    areas: [
+                        { shape: 'circle', coords: '1240,748,49', alt: 'A01', title: 'A01' },
+                        { shape: 'circle', coords: '1145,629,41', alt: 'A02', title: 'A02' },
+                        { shape: 'circle', coords: '1338,654,37', alt: 'A03', title: 'A03' },
+                        { shape: 'circle', coords: '1503,670,34', alt: 'A04', title: 'A04' },
+                        { shape: 'circle', coords: '1701,694,46', alt: 'A05', title: 'A05' },
+                        { shape: 'circle', coords: '1645,793,54', alt: 'A06', title: 'A06' },
+                        { shape: 'circle', coords: '374,604,44', alt: 'B01', title: 'B01' },
+                        { shape: 'circle', coords: '486,471,47', alt: 'B02', title: 'B02' },
+                        { shape: 'circle', coords: '585,589,61', alt: 'B03', title: 'B03' },
+                        { shape: 'circle', coords: '716,705,62', alt: 'B04', title: 'B04' }
+                    ]
+                },
+                {
+                    src: 'Images/RDC_12.jpg',
+                    areas: [
+                        { shape: 'circle', coords: '1125,732,39', alt: 'A01', title: 'A01' },
+                        { shape: 'circle', coords: '1096,601,39', alt: 'A02', title: 'A02' },
+                        { shape: 'circle', coords: '1272,669,44', alt: 'A03', title: 'A03' },
+                        { shape: 'circle', coords: '1423,716,43', alt: 'A04', title: 'A04' },
+                        { shape: 'circle', coords: '1610,777,50', alt: 'A05', title: 'A05' },
+                        { shape: 'circle', coords: '1511,867,47', alt: 'A06', title: 'A06' },
+                        { shape: 'circle', coords: '381,440,56', alt: 'B01', title: 'B01' },
+                        { shape: 'circle', coords: '539,319,46', alt: 'B02', title: 'B02' },
+                        { shape: 'circle', coords: '581,469,58', alt: 'B03', title: 'B03' },
+                        { shape: 'circle', coords: '655,596,47', alt: 'B04', title: 'B04' }
+                    ]
+                },
+                {
+                    src: 'Images/RDC_13.jpg',
+                    areas: [
+                        { shape: 'circle', coords: '1079,750,54', alt: 'A01', title: 'A01' },
+                        { shape: 'circle', coords: '1123,619,40', alt: 'A02', title: 'A02' },
+                        { shape: 'circle', coords: '1260,715,46', alt: 'A03', title: 'A03' },
+                        { shape: 'circle', coords: '1386,795,54', alt: 'A04', title: 'A04' },
+                        { shape: 'circle', coords: '1518,909,46', alt: 'A05', title: 'A05' },
+                        { shape: 'circle', coords: '1367,968,44', alt: 'A06', title: 'A06' },
+                        { shape: 'circle', coords: '569,302,37', alt: 'B01', title: 'B01' },
+                        { shape: 'circle', coords: '776,238,49', alt: 'B02', title: 'B02' },
+                        { shape: 'circle', coords: '727,377,56', alt: 'B03', title: 'B03' },
+                        { shape: 'circle', coords: '728,500,50', alt: 'B04', title: 'B04' }
+                    ]
+                },
+                {
+                    src: 'Images/RDC_14.jpg',
+                    areas: [
+                        { shape: 'circle', coords: '908,773,48', alt: 'A01', title: 'A01' },
+                        { shape: 'circle', coords: '1015,660,37', alt: 'A02', title: 'A02' },
+                        { shape: 'circle', coords: '1105,770,37', alt: 'A03', title: 'A03' },
+                        { shape: 'circle', coords: '1164,885,49', alt: 'A04', title: 'A04' },
+                        { shape: 'circle', coords: '1259,1014,52', alt: 'A05', title: 'A05' },
+                        { shape: 'circle', coords: '1081,1033,45', alt: 'A06', title: 'A06' },
+                        { shape: 'circle', coords: '627,242,45', alt: 'B01', title: 'B01' },
+                        { shape: 'circle', coords: '852,228,43', alt: 'B02', title: 'B02' },
+                        { shape: 'circle', coords: '749,344,53', alt: 'B03', title: 'B03' },
+                        { shape: 'circle', coords: '681,467,50', alt: 'B04', title: 'B04' }
+                    ]
+                },
+                {
+                    src: 'Images/RDC_15.jpg',
+                    areas: [
+                        { shape: 'circle', coords: '739,692,51', alt: 'A01', title: 'A01' },
+                        { shape: 'circle', coords: '905,631,39', alt: 'A02', title: 'A02' },
+                        { shape: 'circle', coords: '883,762,34', alt: 'A03', title: 'A03' },
+                        { shape: 'circle', coords: '872,879,36', alt: 'A04', title: 'A04' },
+                        { shape: 'circle', coords: '833,1018,51', alt: 'A05', title: 'A05' },
+                        { shape: 'circle', coords: '677,985,44', alt: 'A06', title: 'A06' },
+                        { shape: 'circle', coords: '917,162,59', alt: 'B01', title: 'B01' },
+                        { shape: 'circle', coords: '1133,216,52', alt: 'B02', title: 'B02' },
+                        { shape: 'circle', coords: '942,290,42', alt: 'B03', title: 'B03' },
+                        { shape: 'circle', coords: '783,371,54', alt: 'B04', title: 'B04' }
+                    ]
+                },
+                {
+                    src: 'Images/RDC_16.jpg',
+                    areas: [
+                        { shape: 'circle', coords: '732,609,48', alt: 'A01', title: 'A01' },
+                        { shape: 'circle', coords: '930,594,45', alt: 'A02', title: 'A02' },
+                        { shape: 'circle', coords: '838,706,41', alt: 'A03', title: 'A03' },
+                        { shape: 'circle', coords: '755,813,49', alt: 'A04', title: 'A04' },
+                        { shape: 'circle', coords: '630,930,40', alt: 'A05', title: 'A05' },
+                        { shape: 'circle', coords: '517,866,54', alt: 'A06', title: 'A06' },
+                        { shape: 'circle', coords: '1206,163,39', alt: 'B01', title: 'B01' },
+                        { shape: 'circle', coords: '1386,257,59', alt: 'B02', title: 'B02' },
+                        { shape: 'circle', coords: '1157,279,44', alt: 'B03', title: 'B03' },
+                        { shape: 'circle', coords: '980,333,59', alt: 'B04', title: 'B04' }
+                    ]
+                },
+                {
+                    src: 'Images/RDC_17.jpg',
+                    areas: [
+                        { shape: 'circle', coords: '737,583,55', alt: 'A01', title: 'A01' },
+                        { shape: 'circle', coords: '928,608,50', alt: 'A02', title: 'A02' },
+                        { shape: 'circle', coords: '799,711,50', alt: 'A03', title: 'A03' },
+                        { shape: 'circle', coords: '684,786,52', alt: 'A04', title: 'A04' },
+                        { shape: 'circle', coords: '525,883,52', alt: 'A05', title: 'A05' },
+                        { shape: 'circle', coords: '435,787,46', alt: 'A06', title: 'A06' },
+                        { shape: 'circle', coords: '1382,222,55', alt: 'B01', title: 'B01' },
+                        { shape: 'circle', coords: '1505,353,42', alt: 'B02', title: 'B02' },
+                        { shape: 'circle', coords: '1285,342,48', alt: 'B03', title: 'B03' },
+                        { shape: 'circle', coords: '1092,349,54', alt: 'B04', title: 'B04' }
+                    ]
+                },
+                {
+                    src: 'Images/RDC_18.jpg',
+                    areas: [
+                        { shape: 'circle', coords: '752,556,40', alt: 'A01', title: 'A01' },
+                        { shape: 'circle', coords: '928,609,49', alt: 'A02', title: 'A02' },
+                        { shape: 'circle', coords: '754,676,40', alt: 'A03', title: 'A03' },
+                        { shape: 'circle', coords: '615,724,40', alt: 'A04', title: 'A04' },
+                        { shape: 'circle', coords: '425,800,43', alt: 'A05', title: 'A05' },
+                        { shape: 'circle', coords: '393,690,41', alt: 'A06', title: 'A06' },
+                        { shape: 'circle', coords: '1520,322,49', alt: 'B01', title: 'B01' },
+                        { shape: 'circle', coords: '1593,470,40', alt: 'B02', title: 'B02' },
+                        { shape: 'circle', coords: '1391,411,50', alt: 'B03', title: 'B03' },
+                        { shape: 'circle', coords: '1189,377,55', alt: 'B04', title: 'B04' }
+                    ]
+                },
+                {
+                    src: 'Images/RDC_19.jpg',
+                    areas: [
+                        { shape: 'circle', coords: '671,469,53', alt: 'A01', title: 'A01' },
+                        { shape: 'circle', coords: '793,559,46', alt: 'A02', title: 'A02' },
+                        { shape: 'circle', coords: '613,603,49', alt: 'A03', title: 'A03' },
+                        { shape: 'circle', coords: '447,622,47', alt: 'A04', title: 'A04' },
+                        { shape: 'circle', coords: '259,643,46', alt: 'A05', title: 'A05' },
+                        { shape: 'circle', coords: '264,531,39', alt: 'A06', title: 'A06' },
+                        { shape: 'circle', coords: '1520,404,51', alt: 'B01', title: 'B01' },
+                        { shape: 'circle', coords: '1516,556,55', alt: 'B02', title: 'B02' },
+                        { shape: 'circle', coords: '1328,454,60', alt: 'B03', title: 'B03' },
+                        { shape: 'circle', coords: '1152,386,59', alt: 'B04', title: 'B04' }
+                    ]
+                }
+                
+                
+                
             ]
+
         };
 
 // Exporter l'objet
