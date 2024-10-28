@@ -75,7 +75,15 @@ a:hover, button:hover {
 
 #maquette {
     position: relative; /* Positionner le conteneur de manière relative pour que les enfants puissent être positionnés par rapport à lui */
+    overflow: hidden;
 }
+
+#mainImage.zoom {
+    transform-origin: center;
+    cursor: move; /* Curseur pour indiquer le mode de déplacement */
+    transition: transform 0.3s ease; /* Effet de transition */
+}
+
 
 img {
     border-radius: 10px;
@@ -159,8 +167,20 @@ area {
 
 
 
+#zoom-in, #zoom-out {
+    width: auto; /* Ajuste automatiquement la largeur du bouton au contenu */
+    padding: 5px; /* Ajoute un léger padding pour la clarté visuelle */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-
+#zoom-in svg, #zoom-out svg {
+    width: 18px;
+    height: 18px;
+    color: #0075ff; /* Changez la couleur si nécessaire */
+}
 
 
 

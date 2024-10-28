@@ -229,3 +229,68 @@ window.addEventListener('click', function (e) {
         document.getElementById('modalMaps').style.display = 'none';
     }
 });
+
+
+
+
+
+
+///FONCTION ZOOM IMAGE/////
+
+const mainImage = document.getElementById('mainImage');
+let scale = 1; // Échelle de zoom initiale
+let isDragging = false; // État de glissement
+let startX, startY, scrollLeft, scrollTop;
+
+// Fonction de zoom avant
+function zoomIn() {
+    scale += 0.1;
+    updateZoom();
+}
+
+// Fonction de zoom arrière
+function zoomOut() {
+    scale = Math.max(1, scale - 0.1); // Limite de zoom à 1
+    updateZoom();
+}
+
+// Met à jour l'image avec la nouvelle échelle
+function updateZoom() {
+    mainImage.style.transform = `scale(${scale})`;
+    mainImage.classList.add('zoom');
+}
+
+// Événements pour le glissement de l'image
+mainImage.addEventListener('mousedown', (e) => {
+    if (scale > 1) {
+        isDragging = true;
+        startX = e.pageX - mainImage.offsetLeft;
+        startY = e.pageY - mainImage.offsetTop;
+        scrollLeft = mainImage.offsetLeft;
+        scrollTop = mainImage.offsetTop;
+        mainImage.style.cursor = 'grabbing';
+    }
+});
+
+mainImage.addEventListener('mouseup', () => {
+    isDragging = false;
+    mainImage.style.cursor = 'move';
+});
+
+mainImage.addEventListener('mouseleave', () => {
+    isDragging = false;
+    mainImage.style.cursor = 'default';
+});
+
+mainImage.addEventListener('mousemove', (e) => {
+    if (isDragging) {
+        e.preventDefault();
+        const x = e.pageX - startX;
+        const y = e.pageY - startY;
+        mainImage.style.transform = `translate(${x}px, ${y}px) scale(${scale})`;
+    }
+});
+
+// Écouteurs d'événements pour les boutons de zoom
+document.getElementById('zoom-in').addEventListener('click', zoomIn);
+document.getElementById('zoom-out').addEventListener('click', zoomOut);
