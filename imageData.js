@@ -9,6 +9,15 @@ const imageSets = {
         'Images/Toiture_16.jpg', 'Images/Toiture_17.jpg', 'Images/Toiture_18.jpg',
         'Images/Toiture_19.jpg'
     ],
+    'pieton': [
+        'Images/pieton_1.jpg', 'Images/pieton_2.jpg', 'Images/pieton_3.jpg',
+        'Images/pieton_4.jpg', 'Images/pieton_5.jpg', 'Images/pieton_6.jpg',
+        'Images/pieton_7.jpg', 'Images/pieton_8.jpg', 'Images/pieton_9.jpg',
+        'Images/pieton_10.jpg', 'Images/pieton_11.jpg', 'Images/pieton_12.jpg',
+        'Images/pieton_13.jpg', 'Images/pieton_14.jpg', 'Images/pieton_15.jpg',
+        'Images/pieton_16.jpg', 'Images/pieton_17.jpg', 'Images/pieton_18.jpg',
+        'Images/pieton_19.jpg'
+    ],
     'R+3': [
         {
             src: 'Images/R3_1.jpg',

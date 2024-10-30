@@ -3,17 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie Photo</title>
-    <link rel="stylesheet" href="galerie.css">
+    <title>Galerie d'Images</title>
+    <style>
+    /* Mise en forme générale */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    font-family: "Montserrat", sans-serif;
+    color: #f5f5f5;
+}
+
+/* Titres */
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.8em;
+    color: #bc9c06;
+}
+
+/* Sections de la galerie */
+.gallery-section {
+    margin: 30px;
+}
+
+/* Galerie d'images */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery img {
+    flex: 0 0 30%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Modale */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 80%;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 10px;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #bc9c06;
+}
+
+/* Bouton de fermeture */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    color: #f5f5f5;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #bc9c06;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Adaptation mobile */
+@media (max-width: 768px) {
+    .gallery img {
+        flex: 1 1 100%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }}
+</style>
 </head>
 <body>
-    <h1>Galerie Photo de la Résidence Sweet Life</h1>
-    <div class="gallery">
-        <div class="gallery-item"><img src="Images/photo1.jpg" alt="Photo 1"></div>
-        <div class="gallery-item"><img src="Images/photo2.jpg" alt="Photo 2"></div>
-        <div class="gallery-item"><img src="Images/photo3.jpg" alt="Photo 3"></div>
-        <div class="gallery-item"><img src="Images/photo4.jpg" alt="Photo 4"></div>
-        <!-- Ajoutez d'autres div .gallery-item avec vos images -->
+
+    <section class="gallery-section">
+        <h2>Photos de la Résidence</h2>
+        <div class="gallery">
+            <img src="residence1.jpg" alt="Résidence 1">
+            <img src="residence2.jpg" alt="Résidence 2">
+            <img src="residence3.jpg" alt="Résidence 3">
+            <!-- Ajoutez d'autres images si besoin -->
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <h2>Photos du Quartier</h2>
+        <div class="gallery">
+            <img src="Images/environnement_1.png" alt="Quartier 1">
+            <img src="Images/environnement_2.png" alt="Quartier 2">
+            <img src="Images/environnement_3.png" alt="Quartier 3">
+            <img src="Images/environnement_4.png" alt="Quartier 3">
+            <img src="Images/environnement_5.png" alt="Quartier 3">
+            <!-- Ajoutez d'autres images si besoin -->
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <h2>Photos de la Ville</h2>
+        <div class="gallery">
+            <img src="Images/yssingeaux_1.jpg" alt="Ville 1">
+            <img src="Images/yssingeaux_2.jpg" alt="Ville 2">
+            <img src="Images/yssingeaux_3.jpg" alt="Ville 3">
+            <img src="Images/yssingeaux_4.jpg" alt="Ville 3">
+            <img src="Images/yssingeaux_5.jpg" alt="Ville 3">
+            <img src="Images/yssingeaux_6.jpg" alt="Ville 3">
+            <img src="Images/yssingeaux_7.jpg" alt="Ville 3">
+            <img src="Images/yssingeaux_8.jpg" alt="Ville 3">
+            <img src="Images/yssingeaux_9.jpg" alt="Ville 3">
+            <!-- Ajoutez d'autres images si besoin -->
+        </div>
+    </section>
+
+   
+
+    <div class="modal" id="modal">
+        <span class="close" id="close">&times;</span>
+        <div class="modal-content">
+            <img id="modal-image" src="" alt="Image en grand">
+        </div>
     </div>
+
+    <script>
+        const images = document.querySelectorAll('.gallery img');
+        const modal = document.getElementById('modal');
+        const modalImage = document.getElementById('modal-image');
+        const closeModal = document.getElementById('close');
+    
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                modal.style.display = 'flex';
+                modalImage.src = image.src;
+            });
+        });
+    
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    
+        // Ferme la modale en cliquant en dehors de l'image
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+    
+
 </body>
 </html>

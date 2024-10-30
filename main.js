@@ -53,7 +53,7 @@ const apartments = [
     { title: 'B11', superficie: '90m²', prix: '200 000 €', url_visite: 'https://visiteB21.com', typologie: 'T3' },
     { title: 'A01', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
     { title: 'A02', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
-    { title: 'A03', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
+    { title: 'A03', superficie: '120m²', prix: '250 000 €', url_visite: 'https://app.lapentor.com/sphere/t2-1730290999', typologie: 'T4' },
     { title: 'A04', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
     { title: 'A05', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
     { title: 'A06', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
@@ -67,6 +67,7 @@ const apartments = [
 
 // Objet contenant les références des boutons correspondant à chaque mode
 const modeButtons = {
+    'pieton': document.getElementById('pieton'),
     'toiture': document.getElementById('toiture'),
     'RDC': document.getElementById('rdc'),
     'R+1': document.getElementById('r1'),
@@ -106,12 +107,18 @@ function updateImage(index) {
                     event.preventDefault();
                     const apartment = apartments.find(ap => ap.title === area.title);
                     if (apartment) {
-                        const apartmentInfo = `Appartement n°${apartment.title} <br> Superficie ${apartment.superficie} <br> Prix ${apartment.prix}`;
+                        const apartmentInfo = `
+                            Appartement n°${apartment.title} <br>
+                            Superficie : ${apartment.superficie} <br>
+                            Prix : ${apartment.prix} <br>
+                            Typologie : ${apartment.typologie} <!-- Affiche la typologie ici -->
+                        `;
                         openModal(apartmentInfo, apartment.url_visite);
                     }
                 });
                 imageMap.appendChild(areaElement);
             });
+            
         }
     } else {
         maquette.src = activeImages[index];
@@ -166,6 +173,7 @@ document.getElementById('r1').addEventListener('click', () => switchMode('R+1'))
 document.getElementById('r2').addEventListener('click', () => switchMode('R+2'));
 document.getElementById('r3').addEventListener('click', () => switchMode('R+3'));
 document.getElementById('toiture').addEventListener('click', () => switchMode('toiture'));
+document.getElementById('pieton').addEventListener('click', () => switchMode('pieton'));
 
 // Initialisation : affiche la première image du mode par défaut (toiture)
 document.addEventListener("DOMContentLoaded", function() {
@@ -185,7 +193,6 @@ function openModal(apartmentInfo, visitUrl) {
     modalText.innerHTML = apartmentInfo;
     visitButton.href = visitUrl;
     modal.style.display = "block";
-    console.log(visitButton.href)
 }
 
 // Ajouter un écouteur d'événement pour fermer la fenêtre modale
