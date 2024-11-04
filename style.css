@@ -93,7 +93,7 @@ a:hover {
     
     max-height: calc(100vh - 150px);
     border-radius: 10px;
-    border: 1px solid #bc9c06;
+    
 }
 
 /* Boussole */
@@ -218,6 +218,7 @@ area {
     -o-user-drag: none;
     user-select: none;
     cursor: grab;
+    border: 1px solid #bc9c06;
 }
 
 #mainImage:active {
