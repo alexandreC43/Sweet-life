@@ -123,11 +123,11 @@ a:hover {
 #zoom-in,
 #zoom-out {
     width: auto;
-    padding: 5px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 40px;
 }
 
 #zoom-in svg,
@@ -318,5 +318,3 @@ area {
     /* Ajustements supplémentaires si nécessaire */
 }
 
-/* Supprimer les ajustements pour les écrans larges */
-/* Plus de media query pour les écrans de plus de 1920px */
