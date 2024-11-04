@@ -1,19 +1,13 @@
 // main.js
+
+// Importation des ensembles d'images
 import imageSets from './imageData.js';
 console.log(imageSets);
-// Maintenant vous pouvez utiliser imageSets
-
-document.addEventListener("DOMContentLoaded", function () {
-    modeButtons[currentMode].classList.add('active');
-    updateImage(0); // Affiche la première image
-    makeMapAreasResponsive(); // Rendre les zones cliquables responsives après le chargement initial
-});
-
 
 // Variable pour suivre le mode actuel (toiture, rdc, r+1, r+2, r+3)
 let currentMode = 'toiture';
 
-// Variable pour suivre l'index actuel des images (de 0 à 18)
+// Variable pour suivre l'index actuel des images (de 0 à N)
 let currentIndex = 0;
 
 // Sélectionne l'élément du curseur (slider) dans le document HTML
@@ -64,7 +58,6 @@ const apartments = [
     { title: 'B05', superficie: '90m²', prix: '200 000 €', url_visite: 'https://visiteB21.com', typologie: 'T3' },
 ];
 
-
 // Objet contenant les références des boutons correspondant à chaque mode
 const modeButtons = {
     'pieton': document.getElementById('pieton'),
@@ -111,14 +104,13 @@ function updateImage(index) {
                             Appartement n°${apartment.title} <br>
                             Superficie : ${apartment.superficie} <br>
                             Prix : ${apartment.prix} <br>
-                            Typologie : ${apartment.typologie} <!-- Affiche la typologie ici -->
+                            Typologie : ${apartment.typologie}
                         `;
                         openModal(apartmentInfo, apartment.url_visite);
                     }
                 });
                 imageMap.appendChild(areaElement);
             });
-            
         }
     } else {
         maquette.src = activeImages[index];
@@ -132,7 +124,6 @@ function updateImage(index) {
     // Mettre à jour la rotation de la boussole
     updateCompass(index);
 }
-
 
 // Fonction pour changer de mode (toiture, RDC, R+1, etc.)
 function switchMode(mode) {
@@ -151,19 +142,6 @@ function switchMode(mode) {
 // Ajoute un écouteur d'événement sur le slider (curseur)
 slider.addEventListener('input', () => {
     currentIndex = slider.value - 1;
-    updateImage(currentIndex);
-});
-
-// Ajoute un écouteur d'événement pour la roulette de la souris
-window.addEventListener('wheel', function(event) {
-    if (event.deltaY > 0) {
-        // Défilement vers le bas, passe à l'image suivante
-        currentIndex = (currentIndex + 1) % imageSets[currentMode].length;
-    } else {
-        // Défilement vers le haut, passe à l'image précédente
-        currentIndex = (currentIndex - 1 + imageSets[currentMode].length) % imageSets[currentMode].length;
-    }
-    slider.value = currentIndex + 1;
     updateImage(currentIndex);
 });
 
@@ -207,7 +185,6 @@ window.addEventListener("click", (event) => {
     }
 });
 
-
 // Sélectionne l'élément de la boussole
 const boussole = document.getElementById('boussole');
 
@@ -217,9 +194,6 @@ function updateCompass(index) {
     const angle = index * 20; // Ajustez la logique de rotation selon vos besoins
     boussole.style.transform = `rotate(${angle}deg)`;
 }
-
-
-
 
 // Script pour ouvrir et fermer la modaleMap
 document.getElementById('voirQuartier').addEventListener('click', function (e) {
@@ -237,12 +211,7 @@ window.addEventListener('click', function (e) {
     }
 });
 
-
-
-
-
-
-///FONCTION ZOOM IMAGE/////
+/// FONCTION ZOOM IMAGE /////
 
 const mainImage = document.getElementById('mainImage');
 let scale = 1; // Échelle de zoom initiale
@@ -267,21 +236,30 @@ function updateZoom() {
     mainImage.classList.add('zoom');
 }
 
+// Empêcher le comportement par défaut lors du démarrage du glissement
+mainImage.addEventListener('dragstart', function(event) {
+    event.preventDefault();
+});
+
 // Événements pour le glissement de l'image
 mainImage.addEventListener('mousedown', (e) => {
+    e.preventDefault(); // Empêche le comportement par défaut
     if (scale > 1) {
         isDragging = true;
         startX = e.pageX - mainImage.offsetLeft;
         startY = e.pageY - mainImage.offsetTop;
-        scrollLeft = mainImage.offsetLeft;
-        scrollTop = mainImage.offsetTop;
+        mainImage.style.cursor = 'grabbing';
+    } else {
+        // Initialisation pour le défilement des images
+        isDragging = true;
+        startX = e.pageX;
         mainImage.style.cursor = 'grabbing';
     }
 });
 
 mainImage.addEventListener('mouseup', () => {
     isDragging = false;
-    mainImage.style.cursor = 'move';
+    mainImage.style.cursor = 'default';
 });
 
 mainImage.addEventListener('mouseleave', () => {
@@ -290,11 +268,29 @@ mainImage.addEventListener('mouseleave', () => {
 });
 
 mainImage.addEventListener('mousemove', (e) => {
-    if (isDragging) {
-        e.preventDefault();
+    if (isDragging && scale > 1) {
+        e.preventDefault(); // Empêche le comportement par défaut
         const x = e.pageX - startX;
         const y = e.pageY - startY;
         mainImage.style.transform = `translate(${x}px, ${y}px) scale(${scale})`;
+    } else if (isDragging && scale === 1) {
+        // Gestion du défilement des images
+        e.preventDefault(); // Empêche le comportement par défaut
+        const x = e.pageX;
+        const moveDistance = x - startX;
+
+        if (Math.abs(moveDistance) > 30) { // Seuil ajusté pour plus de réactivité
+            if (moveDistance < 0) {
+                // Mouvement vers la gauche, image suivante
+                currentIndex = (currentIndex + 1) % imageSets[currentMode].length;
+            } else {
+                // Mouvement vers la droite, image précédente
+                currentIndex = (currentIndex - 1 + imageSets[currentMode].length) % imageSets[currentMode].length;
+            }
+            slider.value = currentIndex + 1;
+            updateImage(currentIndex);
+            startX = e.pageX; // Réinitialiser startX pour continuer le défilement
+        }
     }
 });
 

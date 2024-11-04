@@ -1,3 +1,4 @@
+/* Styles généraux */
 body {
     margin: 0;
     overflow: hidden;
@@ -10,50 +11,103 @@ button {
     font-family: "Montserrat", sans-serif;
     width: 100px;
     border-radius: 10px;
-    box-shadow: 1px 1px 2px 1px rgba(209,224,227,0.7)
+    box-shadow: 1px 1px 2px 1px rgba(209, 224, 227, 0.7);
 }
 
+button:hover,
+#vertical-menu a:hover,
+a:hover {
+    transform: scale(1.03);
+    font-weight: 500;
+}
+
+/* Conteneur principal */
 #container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 5px;
-    margin-left: 50px;
-    margin-right: 10px;
-    width: 90%;
+    margin: 5px 10px 0 50px;
+    width: calc(100% - 60px);
     gap: 10px;
 }
 
+/* Menu vertical */
 #vertical-menu {
     background-color: #bc9c06;
-    width: 100%; /* Full width on small screens */
-    max-width: 200px; /* Max width for larger screens */
+    width: 20%; /* Largeur variable */
+    max-width: 200px; /* Largeur maximale */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    height: 961px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: auto;
 }
 
 #vertical-menu a {
     padding: 15px;
     text-decoration: none;
     color: white;
+    text-align: center;
 }
 
-a:hover, button:hover {
-    scale: 103%;
-    font-weight: 500;
+#logoGL {
+   background-color: #0a0a0a;
+   width: 70%;
 }
 
+/* Logo du projet */
 #logoProjet {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+/* Styles pour le contrôle du menu */
+#menuToggle {
+    display: none; /* Cache la case à cocher */
+}
+
+#menuIcon {
+    display: none; /* Caché par défaut */
+    font-size: 24px;
+    padding: 10px;
+    background-color: #bc9c06;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+/* Maquette */
+#maquette {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
 }
 
 #maquette img {
-    max-width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
+    
+    max-height: calc(100vh - 150px);
+    border-radius: 10px;
+    border: 1px solid #bc9c06;
 }
 
+/* Boussole */
+#boussole {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 10%;
+    max-width: 100px;
+    z-index: 10;
+    border: none;
+}
+
+/* Curseur et boutons */
 #cursor {
     display: flex;
     justify-content: center;
@@ -62,36 +116,28 @@ a:hover, button:hover {
     gap: 25px;
 }
 
-
-
-#boussole {
-    position: absolute; /* Positionnement absolu par rapport à #maquette */
-    top: 10px; /* Ajustez pour le placer en haut, peut être modifié selon votre design */
-    right: 10px; /* Ajustez pour le placer à droite, peut être modifié selon votre design */
-    width: 10%; /* Utilisez des valeurs en pourcentage pour rendre la taille responsive */
-    max-width: 100px; /* Limite de taille pour éviter qu'elle devienne trop grande sur des écrans larges */
-    z-index: 10; /* Assurez-vous que la boussole soit au-dessus des autres éléments */
-    border: none;
+#cursor button {
+    width: 100px;
 }
 
-#maquette {
-    position: relative; /* Positionner le conteneur de manière relative pour que les enfants puissent être positionnés par rapport à lui */
-    overflow: hidden;
-}
-
-#mainImage.zoom {
-    transform-origin: center;
-    cursor: move; /* Curseur pour indiquer le mode de déplacement */
-    transition: transform 0.3s ease; /* Effet de transition */
-}
-
-
-img {
+#zoom-in,
+#zoom-out {
+    width: auto;
+    padding: 5px;
     border-radius: 10px;
-    border: 1px solid #bc9c06;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Style pour les boutons actifs */
+#zoom-in svg,
+#zoom-out svg {
+    width: 18px;
+    height: 18px;
+    color: #0075ff;
+}
+
+/* Boutons actifs */
 button.active {
     border: 2px solid #bc9c06;
     background-color: #bc9c06;
@@ -99,26 +145,13 @@ button.active {
     font-weight: bold;
 }
 
-
+/* Zones cliquables */
 area {
-    outline: 2px solid red; /* Utiliser seulement pour le développement, retirer en production */
+    outline: none;
 }
 
-
-
-
-
-/* MODAL */
-
- .modal iframe {
-            width: 100%;
-            height: 400px;
-            border: 0;
-        }
-
-
+/* Fenêtres modales */
 .modal {
-   
     display: none;
     position: fixed;
     z-index: 1;
@@ -141,161 +174,148 @@ area {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    height: 400px;
     max-width: 600px;
     border-radius: 10px;
 }
 
-.modal-content button {
-    background-color:#bc9c06;
-    color:#0a0a0a;
-    width: 150px;
+.modal iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
 }
 
-
 .modal-content a {
-    background-color:#bc9c06;
-    color:black;
+    background-color: #bc9c06;
+    color: black;
     width: 150px;
     text-decoration: none;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 3px 3px 2px 1px rgba(31,33,33,0.4)
+    box-shadow: 3px 3px 2px 1px rgba(31, 33, 33, 0.4);
+    margin-top: 10px;
+    padding: 10px;
 }
 
-.close-button {
+.close-button,
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-}
-
-.close-button:hover,
-.close-button:focus {
-    color: black;
-    text-decoration: none;
     cursor: pointer;
 }
 
-
-
-#zoom-in, #zoom-out {
-    width: auto; /* Ajuste automatiquement la largeur du bouton au contenu */
-    padding: 5px; /* Ajoute un léger padding pour la clarté visuelle */
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.close-button:hover,
+.close:hover {
+    color: black;
 }
 
-#zoom-in svg, #zoom-out svg {
-    width: 18px;
-    height: 18px;
-    color: #0075ff; /* Changez la couleur si nécessaire */
+/* Empêcher la sélection et le glissement de l'image principale */
+#mainImage {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-select: none;
+    cursor: grab;
 }
 
+#mainImage:active {
+    cursor: grabbing;
+}
 
-
-
-
-
-
-
-
-/* RESPONSIVE DESIGN */
-
-
+/* Styles pour les écrans plus petits */
 @media (max-width: 1019px) {
-    #mainImage {
-        min-width: 300px;
-    }
+    /* Le conteneur passe en colonne */
     #container {
-        flex-wrap: wrap;
-       
-}
-    #logoProjet {
-        max-width: 100px;
-}
-    body {
-        overflow-y: auto;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    /* Ajustements du menu vertical */
+    #vertical-menu {
+        width: 100%;
+        max-width: none;
+        align-items: center;
+        height: auto;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+
+    /* Cache le contenu du menu par défaut */
+    #menuContent {
+        display: none;
+    }
+
+    /* Affiche l'icône du menu */
+    #menuIcon {
+        display: block;
+    }
+
+    /* Lorsque la case est cochée, affiche le menu */
+    #menuToggle:checked + #menuIcon + #menuContent {
         display: flex;
         flex-direction: column;
-    }
-    #vertical-menu {
-        max-width: none;
-        max-height: 450px;
         align-items: center;
-    
     }
 
+    /* Réduction des éléments pour gagner de l'espace */
+    #logoProjet {
+        display: none; /* Cache le logo */
+    }
+
+    #vertical-menu h5 {
+        display: none; /* Cache le sous-titre */
+    }
+
+    #vertical-menu a {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    #vertical-menu a img {
+        max-width: 80px;
+        margin-top: 10px;
+    }
+
+    /* Ajustements de la maquette */
+    #maquette {
+        width: 100%;
+        margin: 0;
+    }
+
+    #maquette img {
+        width: 100%;
+        height: auto;
+        max-height: calc(100vh - 50px); /* Ajustez en fonction de la hauteur de l'icône du menu */
+    }
+
+    /* Ajustements du curseur et des boutons */
     #cursor {
-        margin-bottom: 500px;
-        gap: 5px;
+        flex-direction: column; /* Afficher les boutons en colonne */
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    #cursor button {
+        width: 100%;
     }
 
     button {
-        width: 60px;
+        width: 100%;
     }
-
-
-    
 }
 
-@media (min-width: 1020px) {
-     #mainImage {
-        min-width: 900px;
-    }
-    #logoProjet {
-        max-width: 100px;
-    }
-    #vertical-menu {
-        min-width: 200px;
-        padding-left: 100px;
-        margin-left: 50px;
-        height: 506px;
-    }
-
-
-    @media (min-width: 1080px) {
-        #mainImage {
-           min-width: 900px;
-       }
-       #logoProjet {
-           max-width: 100px;
-       }
-       #vertical-menu {
-           min-width: 200px;
-           padding-left: 50px;
-       }}
-   
-   
-       @media (min-width: 1150px) {
-        #mainImage {
-           min-width: 900px;
-       }
-       #logoProjet {
-           max-width: 100px;
-       }
-       #vertical-menu {
-           min-width: 200px;
-       }
-   
-   
-   
-
-
+/* Styles spécifiques pour les très petits écrans */
+@media (max-width: 600px) {
+    /* Ajustements supplémentaires si nécessaire */
 }
-@media (min-width: 1180px) {
-    #mainImage {
-        min-width: 1000px;
-    }
-    #logoProjet {
-        min-width: 180px;
-    }
 
-    #vertical-menu {
-        padding-left: 0;
-        margin-left: 0;
-     }
-        
-}}
+/* Supprimer les ajustements pour les écrans larges */
+/* Plus de media query pour les écrans de plus de 1920px */
