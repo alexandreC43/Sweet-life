@@ -314,31 +314,3 @@ mainImage.addEventListener('mousemove', (e) => {
 document.getElementById('zoom-in').addEventListener('click', zoomIn);
 document.getElementById('zoom-out').addEventListener('click', zoomOut);
 
-// Gestion de la modale du Plan de Masse
-
-// Sélectionne la modale, le lien et le bouton de fermeture
-const modalPlanDeMasse = document.getElementById('modalPlanDeMasse');
-const planDeMasseLink = document.getElementById('planDeMasse');
-const closeButtonPlanDeMasse = modalPlanDeMasse.querySelector('.close-button');
-
-// Fonction pour ouvrir la modale
-function openModalPlanDeMasse(event) {
-    event.preventDefault(); // Empêche le comportement par défaut du lien
-    modalPlanDeMasse.style.display = 'block';
-}
-
-// Fonction pour fermer la modale
-function closeModalPlanDeMasse() {
-    modalPlanDeMasse.style.display = 'none';
-}
-
-// Événements pour ouvrir et fermer la modale
-planDeMasseLink.addEventListener('click', openModalPlanDeMasse);
-closeButtonPlanDeMasse.addEventListener('click', closeModalPlanDeMasse);
-
-// Ferme la modale en cliquant en dehors du contenu
-window.addEventListener('click', function(event) {
-    if (event.target === modalPlanDeMasse) {
-        closeModalPlanDeMasse();
-    }
-});
