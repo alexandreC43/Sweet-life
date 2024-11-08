@@ -112,7 +112,8 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 20%;
+    max-width: 1500px;
     gap: 25px;
 }
 
