@@ -15,48 +15,48 @@ const slider = document.getElementById('slider');
 
 // Tableau contenant les informations des appartements
 const apartments = [
-    { title: 'A34', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
-    { title: 'A33', superficie: '95m²', prix: '220 000 €', url_visite: 'https://visiteA33.com', typologie: 'T3' },
-    { title: 'A32', superficie: '110m²', prix: '240 000 €', url_visite: 'https://visiteA32.com', typologie: 'T4' },
-    { title: 'A31', superficie: '105m²', prix: '230 000 €', url_visite: 'https://visiteA31.com', typologie: 'T4' },
-    { title: 'B34', superficie: '130m²', prix: '270 000 €', url_visite: 'https://visiteB25.com', typologie: 'T5' },
-    { title: 'B33', superficie: '100m²', prix: '210 000 €', url_visite: 'https://visiteB24.com', typologie: 'T3' },
-    { title: 'B32', superficie: '115m²', prix: '235 000 €', url_visite: 'https://visiteB22.com', typologie: 'T4' },
-    { title: 'B31', superficie: '90m²', prix: '200 000 €', url_visite: 'https://visiteB21.com', typologie: 'T3' },
-    { title: 'A21', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
-    { title: 'A22', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
-    { title: 'A23', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
-    { title: 'A24', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
-    { title: 'A25', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
-    { title: 'A26', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
-    { title: 'B25', superficie: '130m²', prix: '270 000 €', url_visite: 'https://visiteB25.com', typologie: 'T5' },
-    { title: 'B24', superficie: '100m²', prix: '210 000 €', url_visite: 'https://visiteB24.com', typologie: 'T3' },
-    { title: 'B23', superficie: '115m²', prix: '235 000 €', url_visite: 'https://visiteB22.com', typologie: 'T4' },
-    { title: 'B22', superficie: '90m²', prix: '200 000 €', url_visite: 'https://visiteB21.com', typologie: 'T3' },
-    { title: 'B21', superficie: '90m²', prix: '200 000 €', url_visite: 'https://visiteB21.com', typologie: 'T3' },
-    { title: 'A11', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
-    { title: 'A12', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
-    { title: 'A13', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
-    { title: 'A14', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
-    { title: 'A15', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
-    { title: 'A16', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
-    { title: 'B15', superficie: '130m²', prix: '270 000 €', url_visite: 'https://visiteB25.com', typologie: 'T5' },
-    { title: 'B14', superficie: '100m²', prix: '210 000 €', url_visite: 'https://visiteB24.com', typologie: 'T3' },
-    { title: 'B13', superficie: '115m²', prix: '235 000 €', url_visite: 'https://visiteB22.com', typologie: 'T4' },
-    { title: 'B12', superficie: '90m²', prix: '200 000 €', url_visite: 'https://visiteB21.com', typologie: 'T3' },
-    { title: 'B11', superficie: '90m²', prix: '200 000 €', url_visite: 'https://visiteB21.com', typologie: 'T3' },
-    { title: 'A01', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
-    { title: 'A02', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
-    { title: 'A03', superficie: '120m²', prix: '250 000 €', url_visite: 'https://app.lapentor.com/sphere/t2-1730290999', typologie: 'T4' },
-    { title: 'A04', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
-    { title: 'A05', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
-    { title: 'A06', superficie: '120m²', prix: '250 000 €', url_visite: 'https://visiteA34.com', typologie: 'T4' },
-    { title: 'B01', superficie: '130m²', prix: '270 000 €', url_visite: 'https://visiteB25.com', typologie: 'T5' },
-    { title: 'B02', superficie: '100m²', prix: '210 000 €', url_visite: 'https://visiteB24.com', typologie: 'T3' },
-    { title: 'B03', superficie: '115m²', prix: '235 000 €', url_visite: 'https://visiteB22.com', typologie: 'T4' },
-    { title: 'B04', superficie: '90m²', prix: '200 000 €', url_visite: 'https://visiteB21.com', typologie: 'T3' },
-    { title: 'B05', superficie: '90m²', prix: '200 000 €', url_visite: 'https://visiteB21.com', typologie: 'T3' },
+    { title: 'A34', url_visite: 'https://visiteA34.com', typologie: 'T3',src_plan: 'Plans/A34.pdf' },
+    { title: 'A33', rl_visite: 'https://visiteA33.com', typologie: 'T5',src_plan: 'Plans/A33.pdf' },
+    { title: 'A32', url_visite: 'https://visiteA32.com', typologie: 'T5' ,src_plan: 'Plans/A32.pdf'},
+    { title: 'A31', url_visite: 'https://visiteA31.com', typologie: 'T3' ,src_plan: 'Plans/A31.pdf'},
+    { title: 'B34', url_visite: 'https://visiteB25.com', typologie: 'T5' ,src_plan: 'Plans/B34.pdf'},
+    { title: 'B33', url_visite: 'https://visiteB24.com', typologie: 'T3' ,src_plan: 'Plans/B33.pdf'},
+    { title: 'B32', url_visite: 'https://visiteB22.com', typologie: 'T4' ,src_plan: 'Plans/B32.pdf'},
+    { title: 'B31', rl_visite: 'https://visiteB21.com', typologie: 'T3' ,src_plan: 'Plans/B31.pdf'},
+    { title: 'A21', url_visite: 'https://visiteA34.com', typologie: 'T3' ,src_plan: 'Plans/A21.pdf'},
+    { title: 'A22', url_visite: 'https://visiteA34.com', typologie: 'T3',src_plan: 'Plans/A22.pdf'},
+    { title: 'A23', url_visite: 'https://visiteA34.com', typologie: 'T2' ,src_plan: 'Plans/A23.pdf'},
+    { title: 'A24', url_visite: 'https://visiteA34.com', typologie: 'T2' ,src_plan: 'Plans/A24.pdf'},
+    { title: 'A25', url_visite: 'https://visiteA34.com', typologie: 'T4' ,src_plan: 'Plans/A25.pdf'},
+    { title: 'A26', url_visite: 'https://visiteA34.com', typologie: 'T3' ,src_plan: 'Plans/A26.pdf'},
+    { title: 'B25', url_visite: 'https://visiteB25.com', typologie: 'T4' ,src_plan: 'Plans/B25.pdf'},
+    { title: 'B24', url_visite: 'https://visiteB24.com', typologie: 'T3' ,src_plan: 'Plans/B24.pdf'},
+    { title: 'B23', url_visite: 'https://visiteB22.com', typologie: 'T3' ,src_plan: 'Plans/B23.pdf'},
+    { title: 'B22', rl_visite: 'https://visiteB21.com', typologie: 'T3' ,src_plan: 'Plans/B22.pdf'},
+    { title: 'B21', rl_visite: 'https://visiteB21.com', typologie: 'T2' ,src_plan: 'Plans/B21.pdf'},
+    { title: 'A11', url_visite: 'https://visiteA34.com', typologie: 'T3' ,src_plan: 'Plans/A11.pdf'},
+    { title: 'A12', url_visite: 'https://visiteA34.com', typologie: 'T3' ,src_plan: 'Plans/A12.pdf'},
+    { title: 'A13', url_visite: 'https://visiteA34.com', typologie: 'T2' ,src_plan: 'Plans/A13.pdf'},
+    { title: 'A14', url_visite: 'https://visiteA34.com', typologie: 'T2' ,src_plan: 'Plans/A14.pdf'},
+    { title: 'A15', url_visite: 'https://visiteA34.com', typologie: 'T4' ,src_plan: 'Plans/A15.pdf'},
+    { title: 'A16', url_visite: 'https://visiteA34.com', typologie: 'T3' ,src_plan: 'Plans/A16.pdf'},
+    { title: 'B15', url_visite: 'https://visiteB25.com', typologie: 'T4' ,src_plan: 'Plans/B15.pdf'},
+    { title: 'B14', url_visite: 'https://visiteB24.com', typologie: 'T3' ,src_plan: 'Plans/B14.pdf'},
+    { title: 'B13', url_visite: 'https://visiteB22.com', typologie: 'T3' ,src_plan: 'Plans/B13.pdf'},
+    { title: 'B12', rl_visite: 'https://visiteB21.com', typologie: 'T3' ,src_plan: 'Plans/B12.pdf'},
+    { title: 'B11', rl_visite: 'https://visiteB21.com', typologie: 'T2' ,src_plan: 'Plans/B11.pdf'},
+    { title: 'A01', url_visite: 'https://visiteA34.com', typologie: 'T3' ,src_plan: 'Plans/A01.pdf'},
+    { title: 'A02', url_visite: 'https://visiteA34.com', typologie: 'T3' ,src_plan: 'Plans/A02.pdf'},
+    { title: 'A03', url_visite: 'https://app.lapentor.com/sphere/t2-1730290999', typologie: 'T2',src_plan: 'Plans/A03.pdf' },
+    { title: 'A04', url_visite: 'https://visiteA34.com', typologie: 'T2',src_plan: 'Plans/A04.pdf' },
+    { title: 'A05', url_visite: 'https://visiteA34.com', typologie: 'T4',src_plan: 'Plans/A05.pdf' },
+    { title: 'A06', url_visite: 'https://visiteA34.com', typologie: 'T3' ,src_plan: 'Plans/A06.pdf'},
+    { title: 'B01', url_visite: 'https://visiteB25.com', typologie: 'T2' ,src_plan: 'Plans/B01.pdf'},
+    { title: 'B02', url_visite: 'https://visiteB24.com', typologie: 'T3' ,src_plan: 'Plans/B02.pdf'},
+    { title: 'B03', url_visite: 'https://visiteB22.com', typologie: 'T3' ,src_plan: 'Plans/B03.pdf'},
+    { title: 'B04', rl_visite: 'https://visiteB21.com', typologie: 'T4' ,src_plan: 'Plans/B04.pdf'}
 ];
+
 
 // Objet contenant les références des boutons correspondant à chaque mode
 const modeButtons = {
@@ -96,17 +96,13 @@ function updateImage(index) {
                 areaElement.href = area.href;
                 areaElement.alt = area.alt;
                 areaElement.title = area.title;
+
+                // Écouteur d'événement pour afficher la modale avec les détails de l'appartement
                 areaElement.addEventListener("click", (event) => {
                     event.preventDefault();
                     const apartment = apartments.find(ap => ap.title === area.title);
                     if (apartment) {
-                        const apartmentInfo = `
-                            Appartement n°${apartment.title} <br>
-                            Superficie : ${apartment.superficie} <br>
-                            Prix : ${apartment.prix} <br>
-                            Typologie : ${apartment.typologie}
-                        `;
-                        openModal(apartmentInfo, apartment.url_visite);
+                        openModal(apartment);
                     }
                 });
                 imageMap.appendChild(areaElement);
@@ -130,7 +126,10 @@ function switchMode(mode) {
     currentMode = mode;
 
     // Retire la classe 'active' des boutons du mode précédent
-    document.querySelector('button.active').classList.remove('active');
+    const activeButton = document.querySelector('button.active');
+    if (activeButton) {
+        activeButton.classList.remove('active');
+    }
 
     // Ajoute la classe 'active' au bouton du nouveau mode
     modeButtons[mode].classList.add('active');
@@ -164,12 +163,29 @@ document.addEventListener("DOMContentLoaded", function() {
 const modal = document.getElementById("modal");
 const modalText = document.getElementById("modalText");
 const visitButton = document.getElementById("visitButton");
+const planButton = document.getElementById("planButton"); // Assurez-vous que cet élément existe dans votre HTML
 const closeButton = document.querySelector(".close-button");
 
 // Fonction pour ouvrir la fenêtre modale avec les informations de l'appartement
-function openModal(apartmentInfo, visitUrl) {
+function openModal(apartment) {
+    const apartmentInfo = `
+        Appartement n°${apartment.title} <br>
+        Typologie : ${apartment.typologie}
+    `;
     modalText.innerHTML = apartmentInfo;
-    visitButton.href = visitUrl;
+
+    // Mettre à jour le lien du bouton de visite
+    if (apartment.url_visite) {
+        visitButton.href = apartment.url_visite;
+        visitButton.style.display = 'inline';
+  
+    }
+
+    // Mettre à jour le lien du planButton avec src_plan
+    if (apartment.src_plan) {
+        planButton.href = apartment.src_plan;
+        planButton.style.display = 'inline';
+    } 
     modal.style.display = "block";
 }
 
@@ -216,7 +232,7 @@ window.addEventListener('click', function (e) {
 const mainImage = document.getElementById('mainImage');
 let scale = 1; // Échelle de zoom initiale
 let isDragging = false; // État de glissement
-let startX, startY, scrollLeft, scrollTop;
+let startX, startY;
 
 // Fonction de zoom avant
 function zoomIn() {
@@ -297,8 +313,6 @@ mainImage.addEventListener('mousemove', (e) => {
 // Écouteurs d'événements pour les boutons de zoom
 document.getElementById('zoom-in').addEventListener('click', zoomIn);
 document.getElementById('zoom-out').addEventListener('click', zoomOut);
-
-
 
 // Gestion de la modale du Plan de Masse
 
