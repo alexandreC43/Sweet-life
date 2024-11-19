@@ -271,17 +271,17 @@ const imageSets = {
         {
             src: 'Images/R2_1.jpg',
             areas: [
-                { shape: 'circle', coords: '716,467,42', alt: 'A21', title: 'A21' },
-                { shape: 'circle', coords: '838,591,70', alt: 'A22', title: 'A22' },
-                { shape: 'circle', coords: '633,589,54', alt: 'A23', title: 'A23' },
-                { shape: 'circle', coords: '474,589,51', alt: 'A24', title: 'A24' },
-                { shape: 'circle', coords: '276,584,61', alt: 'A25', title: 'A25' },
-                { shape: 'circle', coords: '317,465,50', alt: 'A26', title: 'A26' },
-                { shape: 'circle', coords: '1564,518,49', alt: 'B21', title: 'B21' },
-                { shape: 'circle', coords: '1691,620,76', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '1508,679,77', alt: 'B23', title: 'B23' },
-                { shape: 'circle', coords: '1378,568,62', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '1199,478,61', alt: 'B25', title: 'B25' }
+                { shape: 'circle', coords: '713,365,51', alt: 'A21', title: 'A21' },
+                { shape: 'circle', coords: '820,476,51', alt: 'A22', title: 'A22' },
+                { shape: 'circle', coords: '632,489,51', alt: 'A23', title: 'A23' },
+                { shape: 'circle', coords: '460,489,51', alt: 'A24', title: 'A24' },
+                { shape: 'circle', coords: '255,474,51', alt: 'A25', title: 'A25' },
+                { shape: 'circle', coords: '301,357,51', alt: 'A26', title: 'A26' },
+                { shape: 'circle', coords: '1572,421,49', alt: 'B21', title: 'B21' },
+                { shape: 'circle', coords: '1687,527,58', alt: 'B22', title: 'B22' },
+                { shape: 'circle', coords: '1510,570,56', alt: 'B23', title: 'B23' },
+                { shape: 'circle', coords: '1381,455,49', alt: 'B24', title: 'B24' },
+                { shape: 'circle', coords: '1205,367,48', alt: 'B25', title: 'B25' }
             ]
         },
         {
@@ -576,17 +576,17 @@ const imageSets = {
         {
             src: 'Images/R1_1.jpg',
             areas: [
-                { shape: 'circle', coords: '722,506,64', alt: 'A11', title: 'A11' },
-                { shape: 'circle', coords: '835,632,62', alt: 'A12', title: 'A12' },
-                { shape: 'circle', coords: '646,637,51', alt: 'A13', title: 'A13' },
-                { shape: 'circle', coords: '476,640,62', alt: 'A14', title: 'A14' },
-                { shape: 'circle', coords: '301,640,61', alt: 'A15', title: 'A15' },
-                { shape: 'circle', coords: '319,513,51', alt: 'A16', title: 'A16' },
-                { shape: 'circle', coords: '1558,566,66', alt: 'B11', title: 'B11' },
-                { shape: 'circle', coords: '1687,675,70', alt: 'B12', title: 'B12' },
-                { shape: 'circle', coords: '1511,735,68', alt: 'B13', title: 'B13' },
-                { shape: 'circle', coords: '1373,604,65', alt: 'B14', title: 'B14' },
-                { shape: 'circle', coords: '1203,530,63', alt: 'B15', title: 'B15' }
+                { shape: 'circle', coords: '710,414,50', alt: 'A11', title: 'A11' },
+                { shape: 'circle', coords: '820,531,48', alt: 'A12', title: 'A12' },
+                { shape: 'circle', coords: '623,525,57', alt: 'A13', title: 'A13' },
+                { shape: 'circle', coords: '462,534,51', alt: 'A14', title: 'A14' },
+                { shape: 'circle', coords: '267,525,51', alt: 'A15', title: 'A15' },
+                { shape: 'circle', coords: '299,407,54', alt: 'A16', title: 'A16' },
+                { shape: 'circle', coords: '1572,482,52', alt: 'B11', title: 'B11' },
+                { shape: 'circle', coords: '1669,574,68', alt: 'B12', title: 'B12' },
+                { shape: 'circle', coords: '1510,622,57', alt: 'B13', title: 'B13' },
+                { shape: 'circle', coords: '1374,505,66', alt: 'B14', title: 'B14' },
+                { shape: 'circle', coords: '1190,415,75', alt: 'B15', title: 'B15' }
             ]
         },
         {
@@ -881,16 +881,16 @@ const imageSets = {
                 {
                     src: 'Images/RDC_1.jpg',
                     areas: [
-                        { shape: 'circle', coords: '712,567,49', alt: 'A01', title: 'A01' },
-                        { shape: 'circle', coords: '827,671,36', alt: 'A02', title: 'A02' },
-                        { shape: 'circle', coords: '639,676,46', alt: 'A03', title: 'A03' },
-                        { shape: 'circle', coords: '473,682,43', alt: 'A04', title: 'A04' },
-                        { shape: 'circle', coords: '280,671,46', alt: 'A05', title: 'A05' },
-                        { shape: 'circle', coords: '313,560,46', alt: 'A06', title: 'A06' },
-                        { shape: 'circle', coords: '1581,611,39', alt: 'B01', title: 'B01' },
-                        { shape: 'circle', coords: '1520,764,47', alt: 'B02', title: 'B02' },
-                        { shape: 'circle', coords: '1367,648,44', alt: 'B03', title: 'B03' },
-                        { shape: 'circle', coords: '1221,554,39', alt: 'B04', title: 'B04' }
+                        { shape: 'circle', coords: '698,451,49', alt: 'A01', title: 'A01' },
+                        { shape: 'circle', coords: '805,560,48', alt: 'A02', title: 'A02' },
+                        { shape: 'circle', coords: '623,565,51', alt: 'A03', title: 'A03' },
+                        { shape: 'circle', coords: '455,564,44', alt: 'A04', title: 'A04' },
+                        { shape: 'circle', coords: '250,556,48', alt: 'A05', title: 'A05' },
+                        { shape: 'circle', coords: '296,454,39', alt: 'A06', title: 'A06' },
+                        { shape: 'circle', coords: '1563,512,49', alt: 'B01', title: 'B01' },
+                        { shape: 'circle', coords: '1524,663,58', alt: 'B02', title: 'B02' },
+                        { shape: 'circle', coords: '1354,536,56', alt: 'B03', title: 'B03' },
+                        { shape: 'circle', coords: '1205,444,62', alt: 'B04', title: 'B04' }
                     ]
                 },
                 {
