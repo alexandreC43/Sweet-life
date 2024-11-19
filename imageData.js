@@ -26,10 +26,10 @@ const imageSets = {
                 { shape: 'circle', coords: '364,529,55', alt: 'A33', title: 'A33' },
                 { shape: 'circle', coords: '749,524,57', alt: 'A32', title: 'A32' },
                 { shape: 'circle', coords: '725,410,51', alt: 'A31', title: 'A31' },
-                { shape: 'circle', coords: '1195,431,56', alt: 'B25', title: 'B25' },
-                { shape: 'circle', coords: '1366,502,48', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: '1597,608,49', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: '1580,480,51', alt: 'B21', title: 'B21' }
+                { shape: 'circle', coords: '1195,431,56', alt: 'B25', title: 'B34' },
+                { shape: 'circle', coords: '1366,502,48', alt: 'B24', title: 'B33' },
+                { shape: 'circle', coords: '1597,608,49', alt: 'B22', title: 'B32' },
+                { shape: 'circle', coords: '1580,480,51', alt: 'B21', title: 'B31' }
             ]
         },
         {
