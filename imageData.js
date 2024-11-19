@@ -510,18 +510,18 @@ const imageSets = {
         },
         {
             src: 'Images/R2_16.jpg',
-            areas: [
-                { shape: 'circle', coords: 'NaN', alt: 'A21', title: 'A21' },
-                { shape: 'circle', coords: 'NaN', alt: 'A22', title: 'A22' },
-                { shape: 'circle', coords: 'NaN', alt: 'A23', title: 'A23' },
-                { shape: 'circle', coords: 'NaN', alt: 'A24', title: 'A24' },
-                { shape: 'circle', coords: 'NaN', alt: 'A25', title: 'A25' },
-                { shape: 'circle', coords: 'NaN', alt: 'A26', title: 'A26' },
-                { shape: 'circle', coords: 'NaN', alt: 'B21', title: 'B21' },
-                { shape: 'circle', coords: 'NaN', alt: 'B22', title: 'B22' },
-                { shape: 'circle', coords: 'NaN', alt: 'B23', title: 'B23' },
-                { shape: 'circle', coords: 'NaN', alt: 'B24', title: 'B24' },
-                { shape: 'circle', coords: 'NaN', alt: 'B25', title: 'B25' }
+            areas:[
+                { shape: 'circle', coords: '800,650,61', alt: 'A21', title: 'A21' },
+                { shape: 'circle', coords: '936,647,65', alt: 'A22', title: 'A22' },
+                { shape: 'circle', coords: '830,700,59', alt: 'A23', title: 'A23' },
+                { shape: 'circle', coords: '750,800,51', alt: 'A24', title: 'A24' },
+                { shape: 'circle', coords: '750,950,73', alt: 'A25', title: 'A25' },
+                { shape: 'circle', coords: '496,894,48', alt: 'A26', title: 'A26' },
+                { shape: 'circle', coords: '1210,190,52', alt: 'B21', title: 'B21' },
+                { shape: 'circle', coords: '1397,182,52', alt: 'B22', title: 'B22' },
+                { shape: 'circle', coords: '1381,298,52', alt: 'B23', title: 'B23' },
+                { shape: 'circle', coords: '1175,327,76', alt: 'B24', title: 'B24' },
+                { shape: 'circle', coords: '980,361,76', alt: 'B25', title: 'B25' }
             ]
         },
         {
