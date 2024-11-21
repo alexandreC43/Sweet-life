@@ -22,7 +22,7 @@ const apartments = [
     { title: 'B34', url_visite: 'https://tour.panoee.net/673ccc2c6912ddbd218f4c0d', typologie: 'T4' ,src_plan: 'Plans/B34.pdf'},
     { title: 'B33', url_visite: 'https://tour.panoee.net/673ccaf7796f7259f9b395b8', typologie: 'T3' ,src_plan: 'Plans/B33.pdf'},
     { title: 'B32', url_visite: 'https://tour.panoee.net/673d8377796f726635b39a24', typologie: 'T5' ,src_plan: 'Plans/B32.pdf'},
-    { title: 'B31', rl_visite: 'hhttps://tour.panoee.net/673ccaf7796f7259f9b395b8', typologie: 'T3' ,src_plan: 'Plans/B31.pdf'},
+    { title: 'B31', url_visite: 'https://tour.panoee.net/673cc9496912dd01768f4b79/673cc9bb796f72bfdcb395a1', typologie: 'T2' ,src_plan: 'Plans/B31.pdf'},
     { title: 'A21', url_visite: 'https://tour.panoee.net/673cc6e06912dd60878f4b55/673cc793796f7243d6b39587', typologie: 'T3' ,src_plan: 'Plans/A21.pdf'},
     { title: 'A22', url_visite: 'https://tour.panoee.net/673cc6e06912dd60878f4b55/673cc793796f7243d6b39587', typologie: 'T3',src_plan: 'Plans/A22.pdf'},
     { title: 'A23', url_visite: 'https://tour.panoee.net/673cc5026912dd6f118f4b43/673cc579796f723fc1b3956c', typologie: 'T2' ,src_plan: 'Plans/A23.pdf'},
@@ -32,8 +32,8 @@ const apartments = [
     { title: 'B25', url_visite: 'https://tour.panoee.net/673ccc2c6912ddbd218f4c0d', typologie: 'T4' ,src_plan: 'Plans/B25.pdf'},
     { title: 'B24', url_visite: 'https://tour.panoee.net/673ccaf7796f7259f9b395b8', typologie: 'T3' ,src_plan: 'Plans/B24.pdf'},
     { title: 'B23', url_visite: 'https://tour.panoee.net/673ccaf7796f7259f9b395b8', typologie: 'T3' ,src_plan: 'Plans/B23.pdf'},
-    { title: 'B22', rl_visite: 'https://tour.panoee.net/673ccaf7796f7259f9b395b8', typologie: 'T3' ,src_plan: 'Plans/B22.pdf'},
-    { title: 'B21', rl_visite: 'https://tour.panoee.net/673cc9496912dd01768f4b79/673cc9bb796f72bfdcb395a1', typologie: 'T2' ,src_plan: 'Plans/B21.pdf'},
+    { title: 'B22', url_visite: 'https://tour.panoee.net/673ccaf7796f7259f9b395b8', typologie: 'T3' ,src_plan: 'Plans/B22.pdf'},
+    { title: 'B21', url_visite: 'https://tour.panoee.net/673cc9496912dd01768f4b79/673cc9bb796f72bfdcb395a1', typologie: 'T2' ,src_plan: 'Plans/B21.pdf'},
     { title: 'A11', url_visite: 'https://tour.panoee.net/673cc6e06912dd60878f4b55/673cc793796f7243d6b39587', typologie: 'T3' ,src_plan: 'Plans/A11.pdf'},
     { title: 'A12', url_visite: 'https://tour.panoee.net/673cc6e06912dd60878f4b55/673cc793796f7243d6b39587', typologie: 'T3' ,src_plan: 'Plans/A12.pdf'},
     { title: 'A13', url_visite: 'https://tour.panoee.net/673cc5026912dd6f118f4b43/673cc579796f723fc1b3956c', typologie: 'T2' ,src_plan: 'Plans/A13.pdf'},
@@ -43,8 +43,8 @@ const apartments = [
     { title: 'B15', url_visite: 'https://tour.panoee.net/673ccc2c6912ddbd218f4c0d', typologie: 'T4' ,src_plan: 'Plans/B15.pdf'},
     { title: 'B14', url_visite: 'https://tour.panoee.net/673ccaf7796f7259f9b395b8', typologie: 'T3' ,src_plan: 'Plans/B14.pdf'},
     { title: 'B13', url_visite: 'https://tour.panoee.net/673ccaf7796f7259f9b395b8', typologie: 'T3' ,src_plan: 'Plans/B13.pdf'},
-    { title: 'B12', rl_visite: 'https://tour.panoee.net/673ccaf7796f7259f9b395b8', typologie: 'T3' ,src_plan: 'Plans/B12.pdf'},
-    { title: 'B11', rl_visite: 'https://tour.panoee.net/673cc9496912dd01768f4b79/673cc9bb796f72bfdcb395a1', typologie: 'T2' ,src_plan: 'Plans/B11.pdf'},
+    { title: 'B12', url_visite: 'https://tour.panoee.net/673ccaf7796f7259f9b395b8', typologie: 'T3' ,src_plan: 'Plans/B12.pdf'},
+    { title: 'B11', url_visite: 'https://tour.panoee.net/673cc9496912dd01768f4b79/673cc9bb796f72bfdcb395a1', typologie: 'T2' ,src_plan: 'Plans/B11.pdf'},
     { title: 'A01', url_visite: 'https://tour.panoee.net/673cc6e06912dd60878f4b55/673cc793796f7243d6b39587', typologie: 'T3' ,src_plan: 'Plans/A01.pdf'},
     { title: 'A02', url_visite: 'https://tour.panoee.net/673cc6e06912dd60878f4b55/673cc793796f7243d6b39587', typologie: 'T3' ,src_plan: 'Plans/A02.pdf'},
     { title: 'A03', url_visite: 'https://tour.panoee.net/673cc5026912dd6f118f4b43/673cc579796f723fc1b3956c', typologie: 'T2',src_plan: 'Plans/A03.pdf' },
@@ -54,7 +54,7 @@ const apartments = [
     { title: 'B01', url_visite: 'https://tour.panoee.net/673cc9496912dd01768f4b79/673cc9bb796f72bfdcb395a1', typologie: 'T2' ,src_plan: 'Plans/B01.pdf'},
     { title: 'B02', url_visite: 'https://tour.panoee.net/673ccaf7796f7259f9b395b8', typologie: 'T3' ,src_plan: 'Plans/B02.pdf'},
     { title: 'B03', url_visite: 'https://tour.panoee.net/673ccaf7796f7259f9b395b8', typologie: 'T3' ,src_plan: 'Plans/B03.pdf'},
-    { title: 'B04', rl_visite: 'https://tour.panoee.net/673ccc2c6912ddbd218f4c0d', typologie: 'T4' ,src_plan: 'Plans/B04.pdf'}
+    { title: 'B04', url_visite: 'https://tour.panoee.net/673ccc2c6912ddbd218f4c0d', typologie: 'T4' ,src_plan: 'Plans/B04.pdf'}
 ];
 
 
